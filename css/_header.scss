@@ -1,0 +1,56 @@
+
+header{
+
+    width:100%;
+    height: 120rem;
+    background:{
+
+        image: url(../img/fondo-landing.jpg);
+        size: cover;
+        repeat:no-repeat;
+        position: center center;
+    }
+    
+
+}
+
+.header-descripcion{
+
+    flex-basis:35%;
+    padding:4rem;
+    max-width:80rem;
+   
+    
+}
+
+.contenedor{
+
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    height: 100rem;
+    width:95%;
+    
+}
+
+h1{
+
+    font-family: $fuenteTitulos;
+    font-size:8rem;
+    font-weight: 700;
+    line-height:1;
+    color:$colorGrisOscuro;
+    margin:0;
+    
+}
+
+
+.descripcion-principal{
+
+    font-family: $fuenteTitulos;
+    font-size: 1.8rem;
+    font-weight: 500;
+    color:$colorGrisOscuro;
+
+}
+

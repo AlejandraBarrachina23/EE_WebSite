@@ -8,6 +8,7 @@
     align-content: space-between;
     align-items: center;
     justify-content: center;
+    font-size: 1.4rem;
      
     .logo{
 
@@ -37,6 +38,7 @@ li{
     display: inline-block;
            
         a{
+            color: $colorPrincipal;
             text:{
                
                 decoration: none;
@@ -50,7 +52,11 @@ li{
                 weight: 600;
 
             }
-            color: $colorPrincipal;
+            
+            a:hover{
+
+                color:blue;
+            }
                 
         }
     
