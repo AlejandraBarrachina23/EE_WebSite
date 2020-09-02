@@ -1,0 +1,55 @@
+
+.servicios{
+
+    display: flex;
+    align-items: center;
+    width:40%;
+        
+}
+
+.servicios:hover{
+
+    box-shadow: 10px 11px 16px -4px rgba(0,0,0,0.15);
+    i{
+        color:$colorGrisOscuro;
+    }
+}
+
+.servicio-icono{
+
+    padding:2rem;
+    color:#000;
+
+    i{
+
+        color:$colorGrisClaro;
+        background-color: $colorVerdeClaro;
+        border-radius: 100%;
+        padding:2rem;
+        font-size:4rem;
+    }
+
+
+}
+
+.servicio-descripcion{
+
+    h3{
+
+        text-transform: uppercase;
+        line-height: 0.5;
+        font-size:2rem;
+        
+    }
+
+    p{
+
+        font-family: $fuentePrincipal;
+        font-size: 1.5rem;
+        line-height: 1.3;
+        margin:0;
+
+    }
+
+}
+

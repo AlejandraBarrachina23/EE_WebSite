@@ -1,6 +1,8 @@
 @import '_nav';
 @import 'variables';
 @import 'header';
+@import 'servicios';
+@import 'acerca-de-mi';
 
 *, *:before, *:after {
 
@@ -19,6 +21,7 @@ body {
     font-weight: 400;
     font-size: 1.8rem;
     line-height:2;
+    background-color:#F5F5F5;
 
 }
 
@@ -51,14 +54,20 @@ img {
     color:$colorGrisOscuro;
 }
 
+.contenedor-grande{
+
+    width:100%;
+    background-color:$colorVerde;
+    opacity:0.9;
+    
+}
+
 .contenedor-mediano{
 
     width:80%;
     margin:0 auto;
-    
-    
+    padding-top:10rem;    
 }
-
 
 h2{
     
@@ -126,129 +135,67 @@ h3{
     font-size:1.5rem;
 }
 
-.servicios{
 
-    display: flex;
+.testimoniales{
+
+    display:flex;
+    flex-direction: column;
     align-items: center;
-    width:40%;
-        
+    margin: 0 auto;
+    padding:4rem;
+    width:30%;
+    
 }
 
-.servicios:hover{
+.testimoniales-imagen{
 
-    box-shadow: 10px 11px 16px -4px rgba(0,0,0,0.15);
-    i{
-        color:$colorGrisOscuro;
-    }
-}
 
-.servicio-icono{
+    text-align:center;
+   
+    img{
 
-    padding:2rem;
-    color:#000;
-
-    i{
-
-        color:$colorGrisClaro;
-        background-color: $colorVerdeClaro;
+        width:20rem;
         border-radius: 100%;
-        padding:2rem;
-        font-size:4rem;
     }
-
-
-}
-
-.servicio-descripcion{
 
     h3{
 
-        text-transform: uppercase;
-        line-height: 0.5;
+        font-weight: 600;
         font-size:2rem;
-        
-    }
+        margin:0;
+        margin-top:1rem;
+        color:#000;
 
+    }
+    
     p{
 
-        font-family: $fuentePrincipal;
-        font-size: 1.5rem;
-        line-height: 1.3;
+        font-weight: 600;
         margin:0;
-
-    }
-
-}
-
-.acerca-de-mi{
-
-    display:flex;
-    justify-content: center;   
-    
-    .acerca-de-mi-imagenes{
-
-        flex-basis: 20rem;
-        margin:5rem 0rem;
         
-
-        img{
-            max-width:35rem;
-            border-radius: 100%;
-          
-        }
     }
+
 }
 
-.acerca-de-mi-descripcion{
 
-    flex-basis: 37%;
-    margin:5rem;
-
-    h3,h4{
-        font-size:2rem;
-        margin:0;
-        color:$colorGrisOscuro;
-        font-family: $fuenteTitulos;
-    }
+.testimoniales-descripcion{
 
     p{
 
         font-size:1.5rem;
+        font-style: italic;
+
+        i{
+
+            font-size:4rem;
+        }
+        
     }
 
 }
 
-.firma{
 
-    text-align:center;
-    padding:2rem;
 
-    img{
-
-        width:6rem;
-        display: inline;
-                
-    }
-
-}
-
-.redes-sociales {
-
-    text-align-last: center;
-
-    i{
-
-        background-color: $colorVerdeClaro;
-        color:$colorGrisOscuro; 
-        font-size:3rem;
-        padding-top:1rem;
-        width:5rem;
-        height:5rem;
-        border-radius: 100%;
-            
-
-    }
-}
 
 
 
