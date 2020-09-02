@@ -1,0 +1,59 @@
+@import 'variables';
+
+.barra-navegacion-principal{
+
+    background-color:#107066;
+    opacity: 0.8;
+    display: flex;
+    align-content: space-between;
+    align-items: center;
+    justify-content: center;
+     
+    .logo{
+
+        flex-basis: 15%;
+        
+        img{
+            
+            max-width: 8rem;
+            margin:0rem 5rem;
+        }
+    }
+
+    .nav{
+
+        flex-basis: 90%;
+        
+    }
+
+}
+
+ul {
+
+li{
+    
+    list-style: none;
+    margin:0.3rem 1.5rem;
+    display: inline-block;
+           
+        a{
+            text:{
+               
+                decoration: none;
+                transform: uppercase;              
+
+            }
+
+            font:{
+                
+                family: $fuenteTitulos;
+                weight: 600;
+
+            }
+            color: $colorPrincipal;
+                
+        }
+    
+}
+
+}
