@@ -242,7 +242,83 @@ address{
     }
 }
 
+footer{
+    
+    font-family: $fuentePrincipal;
+    color: $colorPrincipal;
+    
+}
+
+.pie-de-pagina{
+
+    background-color: $colorVerde;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding:2rem;
+        
+}
+
+.logo img{
+
+    width:30rem;
+    
+}
+
+.navegacion ul{
+
+    padding:0;
+}
 
 
+.navegacion ul li a{
 
+    text-transform: none;
+    font-family: $fuentePrincipal;
+    font-size:1.5rem;
+    font-weight: 300;
+        
+}
 
+.navegacion{
+
+    
+        
+}
+
+.rs-footer{
+
+    text-align:center;
+   
+
+    i{
+        background:none;
+        color:$colorPrincipal;
+    }
+}
+
+footer h3{
+
+    color:$colorPrincipal;
+    font-weight: 500;
+    font-family: $fuentePrincipal;
+}
+
+.copyright{
+
+    border-top: 1px solid $colorPrincipal;
+    background-color:$colorVerde;
+    padding:1rem 2rem;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+}
+
+small{
+
+    a{
+        color:$colorPrincipal;
+        text-decoration:none;
+    }
+}

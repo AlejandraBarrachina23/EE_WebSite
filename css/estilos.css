@@ -408,4 +408,72 @@ address i {
   padding: 1rem;
   border-radius: 100%;
 }
+
+footer {
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+}
+
+.pie-de-pagina {
+  background-color: #107066;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 2rem;
+}
+
+.logo img {
+  width: 30rem;
+}
+
+.navegacion ul {
+  padding: 0;
+}
+
+.navegacion ul li a {
+  text-transform: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.rs-footer {
+  text-align: center;
+}
+
+.rs-footer i {
+  background: none;
+  color: #fff;
+}
+
+footer h3 {
+  color: #fff;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+}
+
+.copyright {
+  border-top: 1px solid #fff;
+  background-color: #107066;
+  padding: 1rem 2rem;
+  font-weight: 500;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+small a {
+  color: #fff;
+  text-decoration: none;
+}
 /*# sourceMappingURL=estilos.css.map */
