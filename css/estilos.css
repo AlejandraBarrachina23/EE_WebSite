@@ -94,14 +94,21 @@ h1 {
   color: #3C3C3F;
 }
 
+.imagen-fondo {
+  background-image: url(../img/fondo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-y: center center;
+}
+
 .servicios {
+  max-width: 50rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 40%;
 }
 
 .servicios:hover {
@@ -146,24 +153,23 @@ h1 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .acerca-de-mi .acerca-de-mi-imagenes {
-  -ms-flex-preferred-size: 20rem;
-      flex-basis: 20rem;
   margin: 5rem 0rem;
 }
 
 .acerca-de-mi .acerca-de-mi-imagenes img {
-  max-width: 35rem;
+  max-width: 30rem;
   border-radius: 100%;
   -webkit-box-shadow: 10px 11px 16px -4px rgba(0, 0, 0, 0.15);
           box-shadow: 10px 11px 16px -4px rgba(0, 0, 0, 0.15);
 }
 
 .acerca-de-mi-descripcion {
-  -ms-flex-preferred-size: 37%;
-      flex-basis: 37%;
+  max-width: 50rem;
   margin: 5rem;
 }
 
@@ -250,7 +256,7 @@ img {
 }
 
 .contenedor-mediano {
-  width: 80%;
+  max-width: 60%;
   margin: 0 auto;
   padding-top: 10rem;
 }
@@ -359,5 +365,47 @@ h3 {
 
 .testimoniales-descripcion p i {
   font-size: 4rem;
+}
+
+.fondo-general {
+  background-image: url(../img/fondo-landing-footer.jpg);
+  background-size: cover;
+  opacity: 0.9;
+}
+
+.contacto-simple {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contacto-simple-informacion {
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+  line-height: 1.8;
+}
+
+.contacto-simple-formulario {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-shadow: 10px 11px 16px -4px rgba(0, 0, 0, 0.15);
+          box-shadow: 10px 11px 16px -4px rgba(0, 0, 0, 0.15);
+  background-color: #fff;
+  padding: 5rem;
+}
+
+address i {
+  background-color: #3C3C3F;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 100%;
 }
 /*# sourceMappingURL=estilos.css.map */
