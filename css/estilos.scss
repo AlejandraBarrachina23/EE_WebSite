@@ -68,7 +68,8 @@ img {
 
     max-width:1200px;
     margin:0 auto;
-    padding-top:10rem;    
+    padding-top:10rem;   
+    padding-bottom: 10rem; 
 }
 
 h2{
@@ -145,7 +146,8 @@ h3{
     align-items: center;
     margin: 0 auto;
     padding:4rem;
-    width:30%;
+    max-width:60rem;
+
     
 }
 
@@ -218,8 +220,9 @@ h3{
 
 .contacto-simple-informacion{
 
-    flex-basis: 40%;
+    flex-basis: 30%;
     line-height:1.8;
+    font-size:1.3rem;
     
 }
 
@@ -235,8 +238,8 @@ h3{
     box-shadow: 10px 11px 16px -4px rgba(0,0,0,0.15);
     background-color:$colorPrincipal;
     padding:5rem;
-    flex-basis:60%;
-    width:35%;
+    flex-basis:70%;
+    width:38%;
     position:absolute;
     left:70rem;
     top:2rem;
@@ -244,7 +247,7 @@ h3{
     input{
 
         padding:1rem;
-        margin-top:1rem;
+        margin:0.5rem 0rem;
         
     }
 
@@ -263,17 +266,20 @@ address{
         color:$colorGrisOscuro;
         font-size:2.5rem;
         padding:1rem;
+        
        
     }
+
 
     p{
 
         color: $colorGrisOscuro;
-        font-size:2rem;
+        font-size:1.3rem;
         font-weight: 500;
         font-style:normal;
         font-family: $fuentePrincipal;
-        margin:1rem;
+        margin:0.5rem;
+        
     }
 }
 
@@ -300,14 +306,25 @@ footer{
 .logo img{
 
     width:30rem;
+    margin:0 auto;
     
 }
 
+footer .navegacion{
+
+    flex-basis:30rem;
+}
 .navegacion ul{
 
     padding:0;
 }
 
+
+.navegacion ul li{
+
+       width:9rem;
+       margin:0;
+}
 
 .navegacion ul li a{
 
@@ -318,6 +335,11 @@ footer{
         
 }
 
+.logo-f{
+
+    flex-basis:33.3%;
+    
+}
 .contacto-item{
 
     display: flex;
@@ -328,6 +350,8 @@ footer{
 .rs-footer{
 
     text-align:center;
+    flex-basis: 33.3%;
+   
    
 
     i{

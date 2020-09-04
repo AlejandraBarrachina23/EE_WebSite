@@ -102,13 +102,14 @@ h1 {
 }
 
 .servicios {
-  max-width: 50rem;
+  max-width: 52rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 2rem;
 }
 
 .servicios:hover {
@@ -260,6 +261,7 @@ img {
   max-width: 1200px;
   margin: 0 auto;
   padding-top: 10rem;
+  padding-bottom: 10rem;
 }
 
 h2 {
@@ -334,7 +336,7 @@ h3 {
           align-items: center;
   margin: 0 auto;
   padding: 4rem;
-  width: 30%;
+  max-width: 60rem;
 }
 
 .testimoniales-imagen {
@@ -388,9 +390,10 @@ h3 {
 }
 
 .contacto-simple-informacion {
-  -ms-flex-preferred-size: 40%;
-      flex-basis: 40%;
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
   line-height: 1.8;
+  font-size: 1.3rem;
 }
 
 .contacto-principal {
@@ -409,9 +412,9 @@ h3 {
           box-shadow: 10px 11px 16px -4px rgba(0, 0, 0, 0.15);
   background-color: #fff;
   padding: 5rem;
-  -ms-flex-preferred-size: 60%;
-      flex-basis: 60%;
-  width: 35%;
+  -ms-flex-preferred-size: 70%;
+      flex-basis: 70%;
+  width: 38%;
   position: absolute;
   left: 70rem;
   top: 2rem;
@@ -419,7 +422,7 @@ h3 {
 
 .contacto-simple-formulario input {
   padding: 1rem;
-  margin-top: 1rem;
+  margin: 0.5rem 0rem;
 }
 
 .contacto-simple-formulario label {
@@ -434,11 +437,11 @@ address i {
 
 address p {
   color: #3C3C3F;
-  font-size: 2rem;
+  font-size: 1.3rem;
   font-weight: 500;
   font-style: normal;
   font-family: "Roboto", sans-serif;
-  margin: 1rem;
+  margin: 0.5rem;
 }
 
 footer {
@@ -464,10 +467,21 @@ footer {
 
 .logo img {
   width: 30rem;
+  margin: 0 auto;
+}
+
+footer .navegacion {
+  -ms-flex-preferred-size: 30rem;
+      flex-basis: 30rem;
 }
 
 .navegacion ul {
   padding: 0;
+}
+
+.navegacion ul li {
+  width: 9rem;
+  margin: 0;
 }
 
 .navegacion ul li a {
@@ -475,6 +489,11 @@ footer {
   font-family: "Roboto", sans-serif;
   font-size: 1.5rem;
   font-weight: 300;
+}
+
+.logo-f {
+  -ms-flex-preferred-size: 33.3%;
+      flex-basis: 33.3%;
 }
 
 .contacto-item {
@@ -488,6 +507,8 @@ footer {
 
 .rs-footer {
   text-align: center;
+  -ms-flex-preferred-size: 33.3%;
+      flex-basis: 33.3%;
 }
 
 .rs-footer i {
