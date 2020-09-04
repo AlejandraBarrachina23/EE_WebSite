@@ -2,13 +2,13 @@
 
 .barra-navegacion-principal{
 
-    background-color:#107066;
+    background-color:$colorVerde;
+    height: 5rem;
     opacity: 0.8;
     display: flex;
-    align-content: space-between;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-    font-size: 1.4rem;
+    font-size: 1rem;
      
     .logo{
 
@@ -16,6 +16,7 @@
         
         img{
             
+            padding:1rem;
             max-width: 8rem;
             margin:0rem 5rem;
         }
@@ -23,8 +24,7 @@
 
     .nav{
 
-        flex-basis: 90%;
-        
+        flex-basis: 90%;  
     }
 
 }
@@ -49,14 +49,8 @@ li{
             font:{
                 
                 family: $fuenteTitulos;
-                weight: 600;
-
-            }
-            
-            a:hover{
-
-                color:blue;
-            }
+                weight: 500;
+            }   
                 
         }
     

@@ -1,18 +1,17 @@
 .barra-navegacion-principal {
   background-color: #107066;
+  height: 5rem;
   opacity: 0.8;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-line-pack: justify;
-      align-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  font-size: 1.4rem;
+  font-size: 1rem;
 }
 
 .barra-navegacion-principal .logo {
@@ -21,6 +20,7 @@
 }
 
 .barra-navegacion-principal .logo img {
+  padding: 1rem;
   max-width: 8rem;
   margin: 0rem 5rem;
 }
@@ -41,27 +41,24 @@ ul li a {
   text-decoration: none;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
-  font-weight: 600;
-}
-
-ul li a a:hover {
-  color: blue;
+  font-weight: 500;
 }
 
 header {
   width: 100%;
-  height: 120rem;
-  background-image: url(../img/fondo-landing.jpg);
+  height: 80rem;
+  background-image: url(../img/fondo-p.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
 }
 
 .header-descripcion {
-  -ms-flex-preferred-size: 35%;
-      flex-basis: 35%;
+  -ms-flex-preferred-size: 60rem;
+      flex-basis: 60rem;
   padding: 4rem;
-  max-width: 80rem;
+  max-width: 90rem;
+  font-weight: 500;
 }
 
 .contenedor {
@@ -74,8 +71,8 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100rem;
-  width: 95%;
+  height: 70rem;
+  width: 93%;
 }
 
 h1 {
@@ -89,9 +86,10 @@ h1 {
 
 .descripcion-principal {
   font-family: "Poppins", sans-serif;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 500;
   color: #3C3C3F;
+  padding: 1rem 0rem;
 }
 
 .imagen-fondo {
@@ -110,15 +108,22 @@ h1 {
       -ms-flex-align: center;
           align-items: center;
   padding: 2rem;
+  cursor: pointer;
 }
 
 .servicios:hover {
   -webkit-box-shadow: 10px 11px 16px -4px rgba(0, 0, 0, 0.15);
           box-shadow: 10px 11px 16px -4px rgba(0, 0, 0, 0.15);
+  -webkit-transition: -webkit-box-shadow 1s;
+  transition: -webkit-box-shadow 1s;
+  transition: box-shadow 1s;
+  transition: box-shadow 1s, -webkit-box-shadow 1s;
 }
 
 .servicios:hover i {
   color: #3C3C3F;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
 }
 
 .servicio-icono {
@@ -241,8 +246,10 @@ img {
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   border: none;
+  -webkit-box-shadow: 10px 11px 16px -4px rgba(0, 0, 0, 0.15);
+          box-shadow: 10px 11px 16px -4px rgba(0, 0, 0, 0.15);
 }
 
 .btn-transparente {
@@ -267,10 +274,12 @@ img {
 h2 {
   text-align: center;
   font-family: "Poppins", sans-serif;
+  color: #312F2F;
   text-transform: uppercase;
   display: inline-block;
   line-height: 0;
   border-bottom: 20px solid #94D6C8;
+  text-shadow: 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 .listado-libros {
@@ -280,6 +289,8 @@ h2 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .libro-imagen {
