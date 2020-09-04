@@ -11,7 +11,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 
 .barra-navegacion-principal .logo {
@@ -168,7 +168,7 @@ h1 {
 }
 
 .acerca-de-mi .acerca-de-mi-imagenes img {
-  max-width: 30rem;
+  max-width: 20rem;
   border-radius: 100%;
   -webkit-box-shadow: 10px 11px 16px -4px rgba(0, 0, 0, 0.15);
           box-shadow: 10px 11px 16px -4px rgba(0, 0, 0, 0.15);
@@ -180,14 +180,14 @@ h1 {
 }
 
 .acerca-de-mi-descripcion h3, .acerca-de-mi-descripcion h4 {
-  font-size: 2rem;
+  font-size: 1.3rem;
   margin: 0;
   color: #3C3C3F;
   font-family: "Poppins", sans-serif;
 }
 
 .acerca-de-mi-descripcion p {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .firma {
@@ -207,10 +207,10 @@ h1 {
 .redes-sociales i {
   background-color: #94D6C8;
   color: #3C3C3F;
-  font-size: 3rem;
+  font-size: 2rem;
   padding-top: 1rem;
-  width: 5rem;
-  height: 5rem;
+  width: 3.8rem;
+  height: 3.8rem;
   border-radius: 100%;
 }
 
@@ -338,6 +338,18 @@ h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  padding: 2rem 0rem;
+  max-width: 50rem;
+}
+
+.testimoniales-detalle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -345,23 +357,23 @@ h3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 80%;
   margin: 0 auto;
-  padding: 4rem;
-  max-width: 60rem;
 }
 
 .testimoniales-imagen {
   text-align: center;
+  margin: 0 auto;
 }
 
 .testimoniales-imagen img {
-  width: 20rem;
+  width: 10rem;
   border-radius: 100%;
 }
 
 .testimoniales-imagen h3 {
   font-weight: 600;
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin: 0;
   margin-top: 1rem;
   color: #000;
@@ -370,21 +382,21 @@ h3 {
 .testimoniales-imagen p {
   font-weight: 600;
   margin: 0;
+  font-size: 1.3rem;
 }
 
 .testimoniales-descripcion p {
-  font-size: 1.5rem;
-  font-style: italic;
+  font-size: 1.3rem;
+  line-height: 1.5;
 }
 
 .testimoniales-descripcion p i {
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 .fondo-general {
   background-image: url(../img/fondo-landing-footer.jpg);
   background-size: cover;
-  opacity: 0.9;
 }
 
 .contacto-simple {
