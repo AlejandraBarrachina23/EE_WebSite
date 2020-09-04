@@ -241,6 +241,7 @@ img {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 1.5rem;
+  border: none;
 }
 
 .btn-transparente {
@@ -256,7 +257,7 @@ img {
 }
 
 .contenedor-mediano {
-  max-width: 60%;
+  max-width: 1200px;
   margin: 0 auto;
   padding-top: 10rem;
 }
@@ -382,10 +383,18 @@ h3 {
           justify-content: space-between;
 }
 
+.contacto-simple p {
+  font-family: "Poppins", sans-serif;
+}
+
 .contacto-simple-informacion {
   -ms-flex-preferred-size: 40%;
       flex-basis: 40%;
   line-height: 1.8;
+}
+
+.contacto-principal {
+  position: relative;
 }
 
 .contacto-simple-formulario {
@@ -400,13 +409,36 @@ h3 {
           box-shadow: 10px 11px 16px -4px rgba(0, 0, 0, 0.15);
   background-color: #fff;
   padding: 5rem;
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
+  width: 35%;
+  position: absolute;
+  left: 70rem;
+  top: 2rem;
+}
+
+.contacto-simple-formulario input {
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.contacto-simple-formulario label {
+  font-size: 1.5rem;
 }
 
 address i {
-  background-color: #3C3C3F;
-  color: #fff;
+  color: #3C3C3F;
+  font-size: 2.5rem;
   padding: 1rem;
-  border-radius: 100%;
+}
+
+address p {
+  color: #3C3C3F;
+  font-size: 2rem;
+  font-weight: 500;
+  font-style: normal;
+  font-family: "Roboto", sans-serif;
+  margin: 1rem;
 }
 
 footer {
@@ -427,6 +459,7 @@ footer {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding: 2rem;
+  height: 30rem;
 }
 
 .logo img {
@@ -444,6 +477,15 @@ footer {
   font-weight: 300;
 }
 
+.contacto-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .rs-footer {
   text-align: center;
 }
@@ -451,6 +493,7 @@ footer {
 .rs-footer i {
   background: none;
   color: #fff;
+  display: inline-block;
 }
 
 footer h3 {

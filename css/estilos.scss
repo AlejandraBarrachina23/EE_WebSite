@@ -44,6 +44,8 @@ img {
     text-transform: uppercase;
     font-weight: 700;
     font-size:1.5rem;
+    border:none;
+    
     
 }
 
@@ -64,7 +66,7 @@ img {
 
 .contenedor-mediano{
 
-    max-width:60%;
+    max-width:1200px;
     margin:0 auto;
     padding-top:10rem;    
 }
@@ -206,7 +208,11 @@ h3{
 
    display: flex; 
    justify-content:space-between;
-   
+
+    p{
+
+        font-family: $fuenteTitulos;
+    }
 
 }
 
@@ -217,6 +223,11 @@ h3{
     
 }
 
+.contacto-principal{
+
+    position:relative;
+}
+
 .contacto-simple-formulario{
 
     display: flex;
@@ -224,21 +235,45 @@ h3{
     box-shadow: 10px 11px 16px -4px rgba(0,0,0,0.15);
     background-color:$colorPrincipal;
     padding:5rem;
+    flex-basis:60%;
+    width:35%;
+    position:absolute;
+    left:70rem;
+    top:2rem;
+
+    input{
+
+        padding:1rem;
+        margin-top:1rem;
+        
+    }
+
+    label{
+
+        font-size:1.5rem;
+    }
 }
+
 
 address{
 
     i{
 
-        background-color: $colorGrisOscuro;
-        color:$colorPrincipal;
+       
+        color:$colorGrisOscuro;
+        font-size:2.5rem;
         padding:1rem;
-        border-radius: 100%;
+       
     }
 
     p{
 
-        
+        color: $colorGrisOscuro;
+        font-size:2rem;
+        font-weight: 500;
+        font-style:normal;
+        font-family: $fuentePrincipal;
+        margin:1rem;
     }
 }
 
@@ -246,6 +281,7 @@ footer{
     
     font-family: $fuentePrincipal;
     color: $colorPrincipal;
+   
     
 }
 
@@ -257,6 +293,7 @@ footer{
     align-items: center;
     flex-wrap: wrap;
     padding:2rem;
+    height: 30rem;
         
 }
 
@@ -281,10 +318,11 @@ footer{
         
 }
 
-.navegacion{
+.contacto-item{
 
-    
-        
+    display: flex;
+    align-items: center;
+  
 }
 
 .rs-footer{
@@ -295,6 +333,7 @@ footer{
     i{
         background:none;
         color:$colorPrincipal;
+        display: inline-block;
     }
 }
 
@@ -314,6 +353,8 @@ footer h3{
     display: flex;
     justify-content: space-between;
 }
+
+
 
 small{
 
