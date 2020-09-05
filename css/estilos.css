@@ -107,7 +107,7 @@ h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 2rem;
+  padding: 1rem;
   cursor: pointer;
 }
 
@@ -135,19 +135,19 @@ h1 {
   color: #707070;
   background-color: #94D6C8;
   border-radius: 100%;
-  padding: 2rem;
+  padding: 1.5rem;
   font-size: 4rem;
 }
 
 .servicio-descripcion h3 {
   text-transform: uppercase;
   line-height: 0.5;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .servicio-descripcion p {
   font-family: "Roboto", sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   line-height: 1.3;
   margin: 0;
 }
@@ -192,7 +192,7 @@ h1 {
 
 .firma {
   text-align: center;
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .firma img {
@@ -207,10 +207,10 @@ h1 {
 .redes-sociales i {
   background-color: #94D6C8;
   color: #3C3C3F;
-  font-size: 2rem;
+  font-size: 1.5rem;
   padding-top: 1rem;
-  width: 3.8rem;
-  height: 3.8rem;
+  width: 3.5rem;
+  height: 3.5rem;
   border-radius: 100%;
 }
 
@@ -265,14 +265,17 @@ img {
 }
 
 .contenedor-mediano {
-  max-width: 1200px;
+  max-width: 100rem;
   margin: 0 auto;
-  padding-top: 10rem;
-  padding-bottom: 10rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+main {
+  text-align: center;
 }
 
 h2 {
-  text-align: center;
   font-family: "Poppins", sans-serif;
   color: #312F2F;
   text-transform: uppercase;
@@ -280,6 +283,11 @@ h2 {
   line-height: 0;
   border-bottom: 20px solid #94D6C8;
   text-shadow: 1px 2px rgba(0, 0, 0, 0.1);
+  font-size: 2rem;
+}
+
+.bajada-titulo {
+  font-size: 1.5rem;
 }
 
 .listado-libros {
@@ -291,6 +299,21 @@ h2 {
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  text-align: left;
+}
+
+.flecha-izquierda, .flecha-derecha {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  color: #3C3C3F;
+  -webkit-box-shadow: 10px 10px 13px 0px #e8e8e8;
+          box-shadow: 10px 10px 13px 0px #e8e8e8;
+  margin-bottom: 10rem;
+}
+
+.libro-descripcion {
+  padding: 0rem 2rem;
 }
 
 .libro-imagen {
@@ -298,8 +321,7 @@ h2 {
 }
 
 .libro-imagen img {
-  max-width: calc(25rem - 2rem);
-  max-height: 30rem;
+  max-height: 25rem;
   -o-object-fit: fill;
      object-fit: fill;
   margin: auto;
@@ -310,12 +332,12 @@ h2 {
 .libros-item {
   -ms-flex-preferred-size: 20rem;
       flex-basis: 20rem;
-  margin: 2rem;
+  margin: 1rem;
 }
 
 h3 {
   font-family: "Poppins", sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   line-height: 1.3;
   color: #312F2F;
 }
@@ -323,15 +345,15 @@ h3 {
 .autor {
   font-weight: 300;
   line-height: 0.8;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   color: #312F2F;
 }
 
 .fa-star {
   color: #E3C853;
-  -webkit-box-shadow: 10px 11px 16px -4px rgba(0, 0, 0, 0.15);
-          box-shadow: 10px 11px 16px -4px rgba(0, 0, 0, 0.15);
-  font-size: 1.5rem;
+  font-size: 1.3rem;
+  -webkit-box-shadow: 10px 10px 13px 0px #e8e8e8;
+          box-shadow: 10px 10px 13px 0px #e8e8e8;
 }
 
 .testimoniales {
