@@ -214,6 +214,183 @@ h1 {
   border-radius: 100%;
 }
 
+.fondo-general {
+  background-image: url(../img/fondo-landing-footer.jpg);
+  background-size: cover;
+}
+
+.contacto-simple {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contacto-simple p {
+  font-family: "Poppins", sans-serif;
+}
+
+.contacto-simple-informacion {
+  -ms-flex-preferred-size: 35%;
+      flex-basis: 35%;
+  line-height: 1.8;
+  font-size: 1.3rem;
+}
+
+.contacto-principal {
+  position: relative;
+}
+
+.contacto-simple-formulario {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-shadow: 10px 11px 16px -4px rgba(0, 0, 0, 0.15);
+          box-shadow: 10px 11px 16px -4px rgba(0, 0, 0, 0.15);
+  background-color: #fff;
+  padding: 4rem;
+  -ms-flex-preferred-size: 70%;
+      flex-basis: 70%;
+  width: 35%;
+  position: absolute;
+  left: 70rem;
+  top: 1rem;
+}
+
+.contacto-simple-formulario input {
+  padding: 0.5rem;
+  margin: 0.1rem 0rem;
+}
+
+.contacto-simple-formulario label {
+  font-size: 1.3rem;
+}
+
+address i {
+  font-size: 1.8rem;
+  padding: 1rem;
+  color: #3C3C3F;
+}
+
+address p {
+  color: #3C3C3F;
+  font-size: 1.1rem;
+  font-weight: 500;
+  font-style: normal;
+  margin: 0.5rem;
+}
+
+footer {
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+}
+
+.pie-de-pagina {
+  background-color: #107066;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem;
+  height: 20rem;
+}
+
+.logo img {
+  width: 20rem;
+  margin: 0 auto;
+}
+
+footer .navegacion {
+  -ms-flex-preferred-size: 30rem;
+      flex-basis: 30rem;
+}
+
+.navegacion ul {
+  padding: 0;
+}
+
+.navegacion ul li {
+  width: 8rem;
+  margin: 0;
+  padding: 0;
+}
+
+.navegacion ul li a {
+  text-transform: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.logo-f {
+  -ms-flex-preferred-size: 33.3%;
+      flex-basis: 33.3%;
+}
+
+.contacto-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.rs-footer {
+  text-align: center;
+  -ms-flex-preferred-size: 33.3%;
+      flex-basis: 33.3%;
+}
+
+.rs-footer i {
+  background: none;
+  color: #fff;
+  display: inline-block;
+  font-size: 2.3rem;
+}
+
+footer h3 {
+  color: #fff;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 0;
+}
+
+.copyright {
+  border-top: 1px solid #fff;
+  background-color: #107066;
+  padding: 0.5rem 2rem;
+  font-weight: 500;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 1.3rem;
+}
+
+small a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/*@mixin estilos-titulos($fondo){
+
+
+}
+
+@include parallamaralafuncion();*/
 *, *:before, *:after {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
@@ -242,10 +419,10 @@ img {
   background-color: #107066;
   color: #fff;
   text-decoration: none;
-  padding: 1.5rem 3rem;
+  padding: 1.3rem 2.5rem;
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 1.4rem;
   border: none;
   -webkit-box-shadow: 10px 11px 16px -4px rgba(0, 0, 0, 0.15);
@@ -414,175 +591,5 @@ h3 {
 
 .testimoniales-descripcion p i {
   font-size: 3rem;
-}
-
-.fondo-general {
-  background-image: url(../img/fondo-landing-footer.jpg);
-  background-size: cover;
-}
-
-.contacto-simple {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.contacto-simple p {
-  font-family: "Poppins", sans-serif;
-}
-
-.contacto-simple-informacion {
-  -ms-flex-preferred-size: 30%;
-      flex-basis: 30%;
-  line-height: 1.8;
-  font-size: 1.3rem;
-}
-
-.contacto-principal {
-  position: relative;
-}
-
-.contacto-simple-formulario {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-shadow: 10px 11px 16px -4px rgba(0, 0, 0, 0.15);
-          box-shadow: 10px 11px 16px -4px rgba(0, 0, 0, 0.15);
-  background-color: #fff;
-  padding: 5rem;
-  -ms-flex-preferred-size: 70%;
-      flex-basis: 70%;
-  width: 38%;
-  position: absolute;
-  left: 70rem;
-  top: 2rem;
-}
-
-.contacto-simple-formulario input {
-  padding: 1rem;
-  margin: 0.5rem 0rem;
-}
-
-.contacto-simple-formulario label {
-  font-size: 1.5rem;
-}
-
-address i {
-  color: #3C3C3F;
-  font-size: 2.5rem;
-  padding: 1rem;
-}
-
-address p {
-  color: #3C3C3F;
-  font-size: 1.3rem;
-  font-weight: 500;
-  font-style: normal;
-  font-family: "Roboto", sans-serif;
-  margin: 0.5rem;
-}
-
-footer {
-  font-family: "Roboto", sans-serif;
-  color: #fff;
-}
-
-.pie-de-pagina {
-  background-color: #107066;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  padding: 2rem;
-  height: 30rem;
-}
-
-.logo img {
-  width: 30rem;
-  margin: 0 auto;
-}
-
-footer .navegacion {
-  -ms-flex-preferred-size: 30rem;
-      flex-basis: 30rem;
-}
-
-.navegacion ul {
-  padding: 0;
-}
-
-.navegacion ul li {
-  width: 9rem;
-  margin: 0;
-}
-
-.navegacion ul li a {
-  text-transform: none;
-  font-family: "Roboto", sans-serif;
-  font-size: 1.5rem;
-  font-weight: 300;
-}
-
-.logo-f {
-  -ms-flex-preferred-size: 33.3%;
-      flex-basis: 33.3%;
-}
-
-.contacto-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.rs-footer {
-  text-align: center;
-  -ms-flex-preferred-size: 33.3%;
-      flex-basis: 33.3%;
-}
-
-.rs-footer i {
-  background: none;
-  color: #fff;
-  display: inline-block;
-}
-
-footer h3 {
-  color: #fff;
-  font-weight: 500;
-  font-family: "Roboto", sans-serif;
-}
-
-.copyright {
-  border-top: 1px solid #fff;
-  background-color: #107066;
-  padding: 1rem 2rem;
-  font-weight: 500;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-small a {
-  color: #fff;
-  text-decoration: none;
 }
 /*# sourceMappingURL=estilos.css.map */
