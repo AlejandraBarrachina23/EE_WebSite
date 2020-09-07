@@ -9,10 +9,10 @@
     justify-content: space-between;
     align-items: center;
     font-size: 1.1rem;
-     
+    
     .logo{
 
-        flex-basis: 15%;
+        flex-basis: 5%;
         
         img{
             
@@ -22,10 +22,6 @@
         }
     }
 
-    .nav{
-
-        flex-basis: 90%;  
-    }
 
 }
 
@@ -56,4 +52,45 @@ li{
     
 }
 
+}
+
+
+
+
+.submenu{
+
+    display:flex;
+    flex-direction: column;
+    background-color:$colorVerde;
+    position:absolute;
+    padding:1rem;
+    visibility: hidden;
+
+}
+
+.menu li a:hover {
+
+    .submenu{
+
+        color:blue;
+        visibility: visible;
+    }
+    
+    
+}
+
+.submenu li a:hover .submenu{
+    
+    visibility: visible;
+    
+}
+
+
+
+@media (min-width:$breakPointComputadora){
+
+    .barra-navegacion-principal{
+
+       
+    }
 }
