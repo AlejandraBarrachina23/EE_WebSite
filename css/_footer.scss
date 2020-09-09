@@ -1,8 +1,3 @@
-footer{
-    
-    font-family: $fuentePrincipal;
-    color: $colorPrincipal;    
-}
 
 .pie-de-pagina{
 
@@ -21,31 +16,51 @@ footer{
     margin:0 auto;    
 }
 
-footer .navegacion{
+footer{ 
+    
+    font-family: $fuentePrincipal;
+    color: $colorPrincipal;  
+
+    h3{
+
+        color:$colorPrincipal;
+        font-weight: 500;
+        font-family: $fuentePrincipal;
+        margin-bottom:0;
+        
+    }
+
+    .navegacion{
 
     flex-basis:30rem;
+    
+        ul{
+
+            padding:0;
+            
+            
+            li{
+
+                display: inline-block;
+                width:8rem;
+                margin:0;
+                padding:0;
+                               
+
+                a{
+
+                    text-transform: none;
+                    font-family: $fuentePrincipal;
+                    font-size:1.2rem;
+                    font-weight: 300;
+                        
+                }
+            }
+        }
+    
+    }
 }
 
-.navegacion ul{
-
-    padding:0;
-}
-
-.navegacion ul li{
-
-       width:8rem;
-       margin:0;
-       padding:0;
-}
-
-.navegacion ul li a{
-
-    text-transform: none;
-    font-family: $fuentePrincipal;
-    font-size:1.2rem;
-    font-weight: 300;
-        
-}
 
 .logo-f{
 
@@ -69,15 +84,6 @@ footer .navegacion{
         display: inline-block;
         font-size:2.3rem;
     }
-}
-
-footer h3{
-
-    color:$colorPrincipal;
-    font-weight: 500;
-    font-family: $fuentePrincipal;
-    margin-bottom:0;
-    
 }
 
 .copyright{

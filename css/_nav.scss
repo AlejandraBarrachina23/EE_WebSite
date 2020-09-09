@@ -8,10 +8,9 @@
     justify-content: space-between;
     font-size: 1.1rem;
     align-items: center;
+    flex-wrap: wrap;
     
     .logo{
-
-       
         
         img{
             
@@ -22,6 +21,14 @@
     }
 
 }
+
+.fa-bars{
+
+    color:#fff;
+    padding:1rem;
+    display: none;
+}
+
 
 
 .menu li{
@@ -76,6 +83,9 @@ ul {
 .menu>li:hover .submenu>li{
 
     display:flex;
+    visibility: visible;
+    opacity: 1;
+
 }
 
 .submenu{
@@ -85,27 +95,74 @@ ul {
     position:absolute;
     background-color:$colorVerde;
     padding:0.8rem 0rem;
-    
-    left:-2rem;
-
-        
+    left:-2rem;       
     
     li{
 
       display: none;
+      visibility: hidden;
+      opacity: 0;
+      transition: visibility 0s, opacity 0.5s linear;
       padding:1rem 0rem;
-   
+            
     }
-
    
 }
 
 
 
-@media (min-width:$breakPointComputadora){
+@media (max-width:$breakPointTabletVertical){
 
+    .menu {
+
+      display: block;
+      padding:0rem;
+      
+
+      li{
+          margin:2rem;
+      }
+      
+    }
+
+    .submenu{
+
+        display: block;
+        position:relative;
+        left:0;
+        padding:0rem 0rem;
+        
+
+        li{
+            margin-bottom:0.5rem;
+            padding:0;
+        }
+     
+    }
+
+    body{
+        
+        color:blue;
+        
+    }
+
+    
     .barra-navegacion-principal{
 
-       
+        flex-direction: column;
+
+        .logo{
+        
+            img{
+                
+                padding:1rem;
+                max-width:12rem;
+                margin:0rem 5rem;
+            }
+        }
     }
+
+    
+
+
 }

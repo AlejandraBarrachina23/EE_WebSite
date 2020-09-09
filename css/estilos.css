@@ -14,12 +14,20 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .barra-navegacion-principal .logo img {
   padding: 1rem;
   max-width: 8rem;
   margin: 0rem 5rem;
+}
+
+.fa-bars {
+  color: #fff;
+  padding: 1rem;
+  display: none;
 }
 
 .menu li {
@@ -61,6 +69,8 @@ ul li a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  visibility: visible;
+  opacity: 1;
 }
 
 .submenu {
@@ -79,7 +89,45 @@ ul li a:hover {
 
 .submenu li {
   display: none;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: visibility 0s, opacity 0.5s linear;
+  transition: visibility 0s, opacity 0.5s linear;
   padding: 1rem 0rem;
+}
+
+@media (max-width: 850px) {
+  .menu {
+    display: block;
+    padding: 0rem;
+  }
+  .menu li {
+    margin: 2rem;
+  }
+  .submenu {
+    display: block;
+    position: relative;
+    left: 0;
+    padding: 0rem 0rem;
+  }
+  .submenu li {
+    margin-bottom: 0.5rem;
+    padding: 0;
+  }
+  body {
+    color: blue;
+  }
+  .barra-navegacion-principal {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .barra-navegacion-principal .logo img {
+    padding: 1rem;
+    max-width: 12rem;
+    margin: 0rem 5rem;
+  }
 }
 
 /*COLORES*/
@@ -327,11 +375,6 @@ address p {
   margin: 0.5rem;
 }
 
-footer {
-  font-family: "Roboto", sans-serif;
-  color: #fff;
-}
-
 .pie-de-pagina {
   background-color: #107066;
   display: -webkit-box;
@@ -351,22 +394,35 @@ footer {
   margin: 0 auto;
 }
 
+footer {
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+}
+
+footer h3 {
+  color: #fff;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 0;
+}
+
 footer .navegacion {
   -ms-flex-preferred-size: 30rem;
       flex-basis: 30rem;
 }
 
-.navegacion ul {
+footer .navegacion ul {
   padding: 0;
 }
 
-.navegacion ul li {
+footer .navegacion ul li {
+  display: inline-block;
   width: 8rem;
   margin: 0;
   padding: 0;
 }
 
-.navegacion ul li a {
+footer .navegacion ul li a {
   text-transform: none;
   font-family: "Roboto", sans-serif;
   font-size: 1.2rem;
@@ -398,13 +454,6 @@ footer .navegacion {
   color: #fff;
   display: inline-block;
   font-size: 2.3rem;
-}
-
-footer h3 {
-  color: #fff;
-  font-weight: 500;
-  font-family: "Roboto", sans-serif;
-  margin-bottom: 0;
 }
 
 .copyright {
