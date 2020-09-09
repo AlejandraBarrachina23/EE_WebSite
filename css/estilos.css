@@ -682,4 +682,64 @@ h3 {
 .testimoniales-descripcion p i {
   font-size: 3rem;
 }
+
+.header-titulos {
+  height: 25vh;
+  background-image: url(../img/fondo-edicion.jpg);
+}
+
+.edicion-servicios {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.edicion-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-shadow: 10px 11px 16px -4px rgba(0, 0, 0, 0.15);
+          box-shadow: 10px 11px 16px -4px rgba(0, 0, 0, 0.15);
+  border: 0.2px solid #e6e6e6;
+}
+
+.edicion-item-descripcion {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  font-size: 1.3rem;
+  padding: 5rem;
+  color: #3C3C3F;
+}
+
+.edicion-item-imagen {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  position: relative;
+}
+
+.edicion-item-imagen h3 {
+  background-color: #94D6C8;
+  color: #3C3C3F;
+  margin: 0;
+  padding: 1.5rem;
+  text-align: center;
+  opacity: 0.9;
+  position: absolute;
+  width: 100%;
+  top: 86%;
+}
+
+.descripcion-seccion {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: #3C3C3F;
+}
+
+.subtitulo {
+  text-transform: none;
+}
 /*# sourceMappingURL=estilos.css.map */
