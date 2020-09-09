@@ -3,7 +3,6 @@
 /*BREAKPOINTS*/
 .barra-navegacion-principal {
   background-color: #107066;
-  height: 5rem;
   opacity: 0.8;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -11,15 +10,10 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  font-size: 1.1rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 1.1rem;
-}
-
-.barra-navegacion-principal .logo {
-  -ms-flex-preferred-size: 5%;
-      flex-basis: 5%;
 }
 
 .barra-navegacion-principal .logo img {
@@ -28,18 +22,45 @@
   margin: 0rem 5rem;
 }
 
+.menu li {
+  position: relative;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+ul {
+  margin: 0;
+}
+
 ul li {
   list-style: none;
-  margin: 0.3rem 1.5rem;
-  display: inline-block;
+  margin: 0rem 2rem;
 }
 
 ul li a {
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
+  text-align: center;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
+}
+
+ul li a:hover {
+  color: #94D6C8;
+}
+
+.menu > li:hover .submenu > li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .submenu {
@@ -50,19 +71,15 @@ ul li a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: #107066;
   position: absolute;
-  padding: 1rem;
-  visibility: hidden;
+  background-color: #107066;
+  padding: 0.8rem 0rem;
+  left: -2rem;
 }
 
-.menu li a:hover .submenu {
-  color: blue;
-  visibility: visible;
-}
-
-.submenu li a:hover .submenu {
-  visibility: visible;
+.submenu li {
+  display: none;
+  padding: 1rem 0rem;
 }
 
 /*COLORES*/

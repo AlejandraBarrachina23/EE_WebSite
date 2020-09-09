@@ -3,16 +3,15 @@
 .barra-navegacion-principal{
 
     background-color:$colorVerde;
-    height: 5rem;
     opacity: 0.8;
     display: flex;
     justify-content: space-between;
-    align-items: center;
     font-size: 1.1rem;
+    align-items: center;
     
     .logo{
 
-        flex-basis: 5%;
+       
         
         img{
             
@@ -22,67 +21,83 @@
         }
     }
 
+}
 
+
+.menu li{
+
+    position:relative;
+}
+
+
+.menu{
+
+    display: flex;
+    justify-content: space-between;
 }
 
 ul {
 
-li{
-    
-    list-style: none;
-    margin:0.3rem 1.5rem;
-    display: inline-block;
-           
-        a{
-            color: $colorPrincipal;
-            text:{
-               
-                decoration: none;
-                transform: uppercase;              
+    margin:0;
+     
+    li{
+        
+        list-style: none;
+        margin:0rem 2rem;
 
+                       
+            a{
+                color: $colorPrincipal;
+                
+                text:{
+                
+                    decoration: none;
+                    transform: uppercase;       
+                    align:center;       
+
+                }
+
+                font:{
+                    
+                    family: $fuenteTitulos;
+                    weight: 500;
+                }  
+                                 
             }
 
-            font:{
-                
-                family: $fuenteTitulos;
-                weight: 500;
-            }   
-                
-        }
-    
-}
+            a:hover{
+
+                color:$colorVerdeClaro;
+            }
+    }
 
 }
 
+.menu>li:hover .submenu>li{
 
-
+    display:flex;
+}
 
 .submenu{
 
     display:flex;
     flex-direction: column;
-    background-color:$colorVerde;
     position:absolute;
-    padding:1rem;
-    visibility: hidden;
+    background-color:$colorVerde;
+    padding:0.8rem 0rem;
+    
+    left:-2rem;
 
-}
+        
+    
+    li{
 
-.menu li a:hover {
-
-    .submenu{
-
-        color:blue;
-        visibility: visible;
+      display: none;
+      padding:1rem 0rem;
+   
     }
-    
-    
-}
 
-.submenu li a:hover .submenu{
-    
-    visibility: visible;
-    
+   
 }
 
 
