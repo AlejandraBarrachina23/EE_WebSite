@@ -800,4 +800,69 @@ h3 {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
 }
+
+.header-faq {
+  background-image: url(../img/fondo-faq.jpg);
+  height: 25vh;
+}
+
+.faq {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.faq-izquierda, .faq-derecha {
+  margin: 1rem;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.preguntas-item {
+  margin: 1px;
+}
+
+.pregunta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #94D6C8;
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  font-weight: 500;
+  padding: 0.5rem 2rem;
+  color: #312F2F;
+  -webkit-box-shadow: 10px 11px 16px -4px rgba(0, 0, 0, 0.15);
+          box-shadow: 10px 11px 16px -4px rgba(0, 0, 0, 0.15);
+}
+
+.pregunta i {
+  padding: 0rem 1rem;
+}
+
+.respuesta {
+  background-color: blue;
+  display: none;
+}
+
+.respuesta p {
+  margin: 0;
+  font-size: 1.4rem;
+  line-height: 1.7;
+  padding: 2rem;
+}
+
+.resaltar-verde {
+  background-color: #94D6C8;
+}
+
+.resaltar-amarillo {
+  background-color: #f7e183;
+}
 /*# sourceMappingURL=estilos.css.map */
