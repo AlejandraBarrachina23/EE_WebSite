@@ -683,7 +683,7 @@ h3 {
   font-size: 3rem;
 }
 
-.header-titulos {
+.header-edicion {
   height: 25vh;
   background-image: url(../img/fondo-edicion.jpg);
 }
@@ -741,5 +741,63 @@ h3 {
 
 .subtitulo {
   text-transform: none;
+}
+
+.header-nosotros {
+  height: 25vh;
+  background-image: url(../img/fondo-nosotros.png);
+}
+
+.carta-presentacion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-shadow: 10px 11px 16px -4px rgba(0, 0, 0, 0.15);
+          box-shadow: 10px 11px 16px -4px rgba(0, 0, 0, 0.15);
+  padding: 5rem;
+}
+
+.datos-autor-contacto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 5rem;
+}
+
+.datos-autor {
+  -ms-flex-preferred-size: calc(50% - 2rem);
+      flex-basis: calc(50% - 2rem);
+  padding: 2rem;
+}
+
+.carta {
+  font-size: 1.3rem;
+  font-style: italic;
+  line-height: 1.8;
+  -ms-flex-preferred-size: calc(48% - 2rem);
+      flex-basis: calc(48% - 2rem);
+}
+
+.carta img {
+  max-width: 5rem;
+}
+
+.datos-autor-descripcion h3 {
+  color: #3C3C3F;
+  font-size: 1.8rem;
+  text-align: center;
+  margin: 0;
+  margin-top: 1rem;
+}
+
+.datos-autor-descripcion h4 {
+  font-size: 1.3rem;
+  margin: 0;
+  text-align: center;
+  color: #3C3C3F;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
 }
 /*# sourceMappingURL=estilos.css.map */
