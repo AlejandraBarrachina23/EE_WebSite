@@ -884,6 +884,21 @@ fieldset {
   border-top: 5rem solid #94D6C8;
 }
 
+fieldset p {
+  font-size: 1.3rem;
+}
+
+.fieldset-datos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
 legend {
   background-color: #94D6C8;
   color: #3C3C3F;
@@ -893,11 +908,43 @@ legend {
   padding: 1.2rem;
 }
 
+.form-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1rem;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.form-item-radio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.radio-item {
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+}
+
 .formulario-contacto label {
   font-size: 1.3rem;
 }
 
-.formulario-contacto input {
-  padding: 0.5rem;
+.formulario-contacto input, .formulario-contacto select {
+  padding: 0.8rem;
+  font-size: 1.3rem;
+}
+
+input[type=submit] {
+  padding: 1rem;
+  display: block;
+  width: 20%;
+  margin-top: 3rem;
 }
 /*# sourceMappingURL=estilos.css.map */

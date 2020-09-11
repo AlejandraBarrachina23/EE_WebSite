@@ -54,53 +54,99 @@
         <form action="contacto.asp" class="formulario-contacto">
             <fieldset>
                 <legend>Datos del solicitante</legend>
-                <label for="nombre">Nombre</label>
-                <input type="text" id="nombre" name="tboxNombre">
-                <label for="apellido">Apellido</label>
-                <input type="text" id="apellido" name="tboxApellido">
-                <label for="mail">Correo electrónico</label>
-                <input type="email" id="mail" name="tboxMail">
-                <label for="celular">Celular</label>
-                <input type="number" id="celular" name="tboxCelular"> 
-                <input type="radio" id="radio-celular" name="rbtnMedioContacto" value="">
-                <label for="radio-celular">Celular</label>
-                <input type="radio" id="radio-mail" name="rbtnMedioContacto" value="">
-                <label for="radio-mail">E-mail</label>
-                <input type="radio" id="radio-otro" name="rbtnMedioContacto" value="">
-                <label for="radio-otro">Otros</label>
+                    <div class="fieldset-datos">
+                    <div class="form-item">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="tboxNombre">
+                    </div>
+                    <div class="form-item">
+                        <label for="apellido">Apellido</label>
+                        <input type="text" id="apellido" name="tboxApellido">
+                    </div>
+                    <div class="form-item">
+                        <label for="mail">Correo electrónico</label>
+                        <input type="email" id="mail" name="tboxMail">
+                    </div>
+                    <div class="form-item">
+                        <label for="celular">Celular</label>
+                        <input type="number" id="celular" name="tboxCelular"> 
+                    </div>
+                    <div class="form-item">
+                        <label for="radio-imagenes">¿Cómo preferís que te contacte?</label> 
+                        <div class="form-item-radio">             
+                            <div class="radio-item">
+                                <input type="radio" id="radio-celular" name="rbtnTelefono" value="">
+                                <label for="radio-celular">Celular</label>
+                            </div>
+                            <div class="radio-item">
+                                <input type="radio" id="radio-mail" name="rbtnMail" value="">
+                                <label for="radio-mail">E-mail</label>
+                            </div>
+                            <div class="radio-item">
+                                <input type="radio" id="radio-indiferente" name="rbtnIndiferente" value="">
+                                <label for="radio-indiferente">Indiferente</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </fieldset>
             <fieldset>
                 <legend>Datos del libro</legend>
-                <label for="formato-libro">Formato</label>
-                <select name="cboxFormato" id="formato-libro">
-                    <option value="">14cmx20cm</option>
-                    <option value="">15cmx23cm</option>
-                    <option value="">20cmx28cm</option>
-                </select>
-                <input type="text" id="formato-otros" name="tboxFormatoOtros">
-                <label for="formato-libro">Género</label>
-                <select name="cboxGenero" id="genero-libro">
-                    <option value="">Ensayo</option>
-                    <option value="">Novela</option>
-                    <option value="">Cuento</option>
-                    <option value="">Poesía</option>
-                </select>
-                <input type="text" id="genero-otros" name="tboxGeneroOtros">
-                <label for="cantidad-caracteres">Cantidad de caracteres</label>
-                <input type="number" id="cantidad-caracteres" name="tboxCaracteres"> 
-                <label for="cantidad-ejemplares">Cantidad de ejemplares</label>
-                <input type="number" id="cantidad-ejemplares" name="tboxCantidadEjemplares"> 
-                <label for="radio-imagenes">Imágenes</label>              
-                <input type="radio" id="radio-imagenes-si" name="rbtnImagenesSi" value="">
-                <label for="radio-celular">Sí</label>
-                <input type="radio" id="radio-imagenes-no" name="rbtnImagenesNo" value="">
-                <label for="radio-mail">No</label>
-                <label for="cantidad-imagenes">Cantidad imágenes</label>
-                <input type="number" id="imagenes" name="tboxCantidadImagenes"> 
+                <div class="fieldset-datos">
+                    <div class="form-item">
+                        <label for="formato-libro">Formato</label>
+                        <select name="cboxFormato" id="formato-libro">
+                            <option value="">14cmx20cm</option>
+                            <option value="">15cmx23cm</option>
+                            <option value="">20cmx28cm</option>
+                        </select>
+                    </div>
+                    <div class="form-item">
+                        <label for="formato-otros">Otro</label>
+                        <input type="text" id="formato-otros" name="tboxFormatoOtros">
+                    </div>
+                    <div class="form-item">
+                        <label for="formato-libro">Género</label>
+                        <select name="cboxGenero" id="genero-libro">
+                            <option value="">Ensayo</option>
+                            <option value="">Novela</option>
+                            <option value="">Cuento</option>
+                            <option value="">Poesía</option>
+                        </select>
+                    </div>
+                    <div class="form-item">
+                        <label for="formato-otros">Otro</label>
+                        <input type="text" id="genero-otros" name="tboxGeneroOtros">
+                    </div>
+                    <div class="form-item">
+                        <label for="cantidad-caracteres">Cantidad de caracteres</label>
+                        <input type="number" id="cantidad-caracteres" name="tboxCaracteres"> 
+                    </div>
+                    <div class="form-item">
+                        <label for="cantidad-ejemplares">Cantidad de ejemplares</label>
+                        <input type="number" id="cantidad-ejemplares" name="tboxCantidadEjemplares"> 
+                    </div>
+                    <div class="form-item">
+                        <label for="radio-imagenes">Imágenes</label> 
+                        <div class="form-item-radio">             
+                            <div class="radio-item">
+                                <input type="radio" id="radio-imagenes-si" name="rbtnImagenesSi" value="">
+                                <label for="radio-celular">Sí</label>
+                            </div>
+                            <div class="radio-item">
+                                <input type="radio" id="radio-imagenes-no" name="rbtnImagenesNo" value="">
+                                <label for="radio-mail">No</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-item">
+                        <label for="cantidad-imagenes">Cantidad imágenes</label>
+                        <input type="number" id="imagenes" name="tboxCantidadImagenes"> 
+                    </div>
+                </div>
             </fieldset>
-            <input type="submit">
+            <input type="submit" class="btn btn-form-contacto">
         </form>
-        
     </section>
 <!--Fin section-edicion-->
 
