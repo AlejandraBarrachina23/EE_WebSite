@@ -739,6 +739,12 @@ h3 {
   color: #3C3C3F;
 }
 
+.descripcion-seccion img {
+  width: 45%;
+  float: left;
+  padding: 1rem;
+}
+
 .subtitulo {
   text-transform: none;
 }
@@ -866,6 +872,7 @@ h3 {
 
 .resaltar-verde {
   background-color: #94D6C8;
+  font-weight: 700;
 }
 
 .resaltar-amarillo {
@@ -946,5 +953,39 @@ input[type=submit] {
   display: block;
   width: 20%;
   margin-top: 3rem;
+}
+
+.header-talleres {
+  background-image: url(../img/fondo-talleres.jpg);
+  height: 20vh;
+}
+
+.listado-autobiografias {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.libro-autobiografia-tapa {
+  max-width: 15rem;
+  padding: 1rem;
+}
+
+.autobiografia-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.autobiografia-item h3 {
+  background-color: #94D6C8;
+  padding: 1rem;
+}
+
+.autobiografia-item p {
+  font-size: 1.3rem;
+  margin: 0;
 }
 /*# sourceMappingURL=estilos.css.map */

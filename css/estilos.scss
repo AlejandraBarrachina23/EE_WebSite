@@ -302,6 +302,13 @@ h3{
     font-size:1.5rem;
     line-height:1.5;
     color:$colorGrisOscuro;
+
+    img{
+
+        width:45%;
+        float:left;
+        padding:1rem;
+    }
     
 }
 
@@ -446,6 +453,7 @@ h3{
 .resaltar-verde{
 
     background-color:$colorVerdeClaro;
+    font-weight: 700;
     
 }
 
@@ -542,6 +550,48 @@ input[type=submit]{
     width:20%;
     margin-top:3rem;
     
+}
+
+.header-talleres{
+
+    background-image: url(../img/fondo-talleres.jpg);
+    height: 20vh;
+}
+
+.listado-autobiografias{
+
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.libro-autobiografia-tapa{
+
+    
+   
+    max-width: 15rem; 
+    padding:1rem;
+
+}
+
+.autobiografia-item{
+
+    display: flex;
+
+    h3{
+
+        background-color:$colorVerdeClaro;
+        padding:1rem;
+               
+    }
+
+    p{
+
+        font-size:1.3rem;
+        margin:0;
+        
+    }
+
 }
 
 
