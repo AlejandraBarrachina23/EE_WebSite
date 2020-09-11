@@ -355,6 +355,14 @@ h3{
     }
 }
 
+.titulos-cabecera{
+
+    font-size:3.5rem;
+    margin-top:5%;
+    text-transform: none;
+
+}
+
 .datos-autor-descripcion{
 
     
@@ -380,6 +388,7 @@ h3{
 
     background-image: url(../img/fondo-faq.jpg);
     height:25vh;
+
 }
 
 .faq{
@@ -421,7 +430,7 @@ h3{
 
 .respuesta{
     
-    background-color:blue;
+    background-color:$colorPrincipal;
     display: none;
 
 
@@ -444,3 +453,43 @@ h3{
 
     background-color:#f7e183;
 }
+
+.header-contacto{
+
+    background-image: url(../img/fondo-landing-footer.jpg);
+    height: 25vh;
+}
+
+fieldset{
+
+    border:none;
+    background-color:$colorPrincipal;
+    padding:3rem;
+    border-top:5rem solid $colorVerdeClaro;
+}
+
+legend{
+
+    background-color:$colorVerdeClaro;
+    color:$colorGrisOscuro;
+    font-size:1.3rem;
+    font-family: $fuenteTitulos;
+    font-weight: 600;
+    padding:1.2rem;
+    
+}
+
+.formulario-contacto{
+
+    label{
+
+        font-size:1.3rem;
+    }
+
+    input{
+        
+        padding:0.5rem;
+
+    }
+}
+

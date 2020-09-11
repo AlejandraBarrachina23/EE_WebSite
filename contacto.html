@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/735f5623c2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Ediciones Elemento</title>
+</head>
+<body>
+    <!--Inicio header-->
+    <header class="header-contacto">
+        <div class="barra-navegacion-principal">
+            <div class="logo">
+                <img src="img/logo-sin.svg" alt="">
+            </div>
+            <nav>
+                <ul class="menu">
+                    <li><a href="#">Servicios</a>
+                            <ul class="submenu">
+                                <li><a href="#">Ghostwriter</a></li>
+                                <li><a href="#">Talleres</a></li>
+                                <li><a href="edicion.html">Edición</a></li>
+                            </ul>
+                        </li>
+                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="#">Libros</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#">Cuenta</a>
+                        <ul class="submenu">
+                            <li><a href="#">Inicia</a></li>
+                            <li><a href="#">Registrarse</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                 </ul>
+            </nav>
+            <i class="fas fa-bars"></i>
+        </div> 
+        <div class="contenedor-mediano">
+            <h2 class="titulos-cabecera">Contacto</h2>     
+         </div>  
+    </header>
+    <section class="contenedor-mediano">
+        <h2 class="subtitulo">Mantegamonos en contacto</h2>
+        <div class="descripcion-seccion">
+            <p>Hay tantos libros como autores y cada uno con características propias, lo que convierte en muy injusto cualquier intento de dar con un costo acertado para la publicación de un libro.</p>
+            <p>Para poder preparar correctamente un presupuesto, es fundamental completar el siguiente formulario:</p>
+        </div> 
+        <form action="contacto.asp" class="formulario-contacto">
+            <fieldset>
+                <legend>Datos del solicitante</legend>
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="tboxNombre">
+                <label for="apellido">Apellido</label>
+                <input type="text" id="apellido" name="tboxApellido">
+                <label for="mail">Correo electrónico</label>
+                <input type="email" id="mail" name="tboxMail">
+                <label for="celular">Celular</label>
+                <input type="number" id="celular" name="tboxCelular"> 
+                <input type="radio" id="radio-celular" name="rbtnMedioContacto" value="">
+                <label for="radio-celular">Celular</label>
+                <input type="radio" id="radio-mail" name="rbtnMedioContacto" value="">
+                <label for="radio-mail">E-mail</label>
+                <input type="radio" id="radio-otro" name="rbtnMedioContacto" value="">
+                <label for="radio-otro">Otros</label>
+            </fieldset>
+            <fieldset>
+                <legend>Datos del libro</legend>
+                <label for="formato-libro">Formato</label>
+                <select name="cboxFormato" id="formato-libro">
+                    <option value="">14cmx20cm</option>
+                    <option value="">15cmx23cm</option>
+                    <option value="">20cmx28cm</option>
+                </select>
+                <input type="text" id="formato-otros" name="tboxFormatoOtros">
+                <label for="formato-libro">Género</label>
+                <select name="cboxGenero" id="genero-libro">
+                    <option value="">Ensayo</option>
+                    <option value="">Novela</option>
+                    <option value="">Cuento</option>
+                    <option value="">Poesía</option>
+                </select>
+                <input type="text" id="genero-otros" name="tboxGeneroOtros">
+                <label for="cantidad-caracteres">Cantidad de caracteres</label>
+                <input type="number" id="cantidad-caracteres" name="tboxCaracteres"> 
+                <label for="cantidad-ejemplares">Cantidad de ejemplares</label>
+                <input type="number" id="cantidad-ejemplares" name="tboxCantidadEjemplares"> 
+                <label for="radio-imagenes">Imágenes</label>              
+                <input type="radio" id="radio-imagenes-si" name="rbtnImagenesSi" value="">
+                <label for="radio-celular">Sí</label>
+                <input type="radio" id="radio-imagenes-no" name="rbtnImagenesNo" value="">
+                <label for="radio-mail">No</label>
+                <label for="cantidad-imagenes">Cantidad imágenes</label>
+                <input type="number" id="imagenes" name="tboxCantidadImagenes"> 
+            </fieldset>
+            <input type="submit">
+        </form>
+        
+    </section>
+<!--Fin section-edicion-->
+
+
+<!--Inicio Footer-->
+<footer>
+    <div class="pie-de-pagina">
+        <div class="logo logo-f"><img src="img/logo-completo.svg" alt=""></div>
+        <div class="navegacion">
+            <h3>Navegación</h3>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="">Ghostwriter</a></li>
+                        <li><a href="">Talleres</a></li>
+                        <li><a href="edicion.html">Edición</a></li>
+                        <li><a href="">Nosotros</a></li>
+                        <li><a href="">Libros</a></li>
+                        <li><a href="">FAQ</a></li>
+                        <li><a href="">Contacto</a></li>
+                    </ul>
+                </nav>
+        </div>
+        <div class="redes-sociales rs-footer">
+                <h3>Redes Sociales</h3>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-amazon"></i>
+                <i class="fab fa-instagram"></i>
+            </div>
+    </div>
+    <div class="copyright">
+        <small>Copyright © 2020 - Ediciones Elementos</small>
+        <small><a href="https://github.com/AlejandraBarrachina23"><i class="fab fa-github"></i> Desarrollado por Alejandra Barrachina</a></small>
+    </div>
+</footer>
+<!--Fin Footer-->
+</body>
+</html>

@@ -784,6 +784,12 @@ h3 {
   max-width: 5rem;
 }
 
+.titulos-cabecera {
+  font-size: 3.5rem;
+  margin-top: 5%;
+  text-transform: none;
+}
+
 .datos-autor-descripcion h3 {
   color: #3C3C3F;
   font-size: 1.8rem;
@@ -847,7 +853,7 @@ h3 {
 }
 
 .respuesta {
-  background-color: blue;
+  background-color: #fff;
   display: none;
 }
 
@@ -864,5 +870,34 @@ h3 {
 
 .resaltar-amarillo {
   background-color: #f7e183;
+}
+
+.header-contacto {
+  background-image: url(../img/fondo-landing-footer.jpg);
+  height: 25vh;
+}
+
+fieldset {
+  border: none;
+  background-color: #fff;
+  padding: 3rem;
+  border-top: 5rem solid #94D6C8;
+}
+
+legend {
+  background-color: #94D6C8;
+  color: #3C3C3F;
+  font-size: 1.3rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  padding: 1.2rem;
+}
+
+.formulario-contacto label {
+  font-size: 1.3rem;
+}
+
+.formulario-contacto input {
+  padding: 0.5rem;
 }
 /*# sourceMappingURL=estilos.css.map */
