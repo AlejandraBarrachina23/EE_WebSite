@@ -261,6 +261,7 @@ h3{
 
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     
 }
 
@@ -298,6 +299,8 @@ h3{
         top:86%;
     }
 }
+
+
 
 .descripcion-seccion{
 
@@ -690,6 +693,38 @@ input[type=submit]{
 
 }
 
+@media (max-width:900px){
 
+    .edicion-servicios{
+
+        display: block;
+        
+        
+    }
+
+    .edicion-item{
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    .foto-izquierda{
+
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .edicion-item-imagen{
+
+    flex-basis:50%;
+    position:static;
+    
+    h3{
+
+        position:static;
+
+    }
+}
+}
 
 

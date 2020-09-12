@@ -720,6 +720,8 @@ h3 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .edicion-item {
@@ -1087,5 +1089,37 @@ input[type=submit] {
   color: #fff;
   -webkit-box-shadow: 10px 11px 16px -4px rgba(0, 0, 0, 0.15);
           box-shadow: 10px 11px 16px -4px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 900px) {
+  .edicion-servicios {
+    display: block;
+  }
+  .edicion-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .foto-izquierda {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .edicion-item-imagen {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    position: static;
+  }
+  .edicion-item-imagen h3 {
+    position: static;
+  }
 }
 /*# sourceMappingURL=estilos.css.map */
