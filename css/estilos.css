@@ -96,40 +96,62 @@ ul li a:hover {
   padding: 1rem 0rem;
 }
 
-@media (max-width: 850px) {
-  .menu {
-    display: block;
-    padding: 0rem;
-  }
-  .menu li {
-    margin: 2rem;
-  }
-  .submenu {
-    display: block;
-    position: relative;
-    left: 0;
-    padding: 0rem 0rem;
-  }
-  .submenu li {
-    margin-bottom: 0.5rem;
-    padding: 0;
-  }
-  body {
-    color: blue;
-  }
-  .barra-navegacion-principal {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .barra-navegacion-principal .logo img {
-    padding: 1rem;
-    max-width: 12rem;
-    margin: 0rem 5rem;
-  }
-}
+/*
+@media (max-width:$breakPointTabletVertical){
 
+    .menu {
+
+      display: block;
+      padding:0rem;
+      
+
+      li{
+          margin:2rem;
+      }
+      
+    }
+
+    .submenu{
+
+        display: block;
+        position:relative;
+        left:0;
+        padding:0rem 0rem;
+        
+
+        li{
+            margin-bottom:0.5rem;
+            padding:0;
+        }
+     
+    }
+
+    body{
+        
+        color:blue;
+        
+    }
+
+    
+    .barra-navegacion-principal{
+
+        flex-direction: column;
+
+        .logo{
+        
+            img{
+                
+                padding:1rem;
+                max-width:12rem;
+                margin:0rem 5rem;
+            }
+        }
+    }
+
+    
+
+
+}*/
 /*COLORES*/
 /*FUENTES*/
 /*BREAKPOINTS*/
@@ -529,11 +551,13 @@ img {
   width: 100%;
   background-color: #107066;
   opacity: 0.9;
+  padding: 1rem;
 }
 
 .contenedor-mediano {
   max-width: 100rem;
   margin: 0 auto;
+  padding: 2rem;
   padding-top: 5rem;
   padding-bottom: 5rem;
 }
