@@ -737,12 +737,24 @@ h3 {
   font-size: 1.5rem;
   line-height: 1.5;
   color: #3C3C3F;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .descripcion-seccion img {
-  width: 45%;
-  float: left;
+  width: 50%;
   padding: 1rem;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.descripcion-seccion .imagen-vertical {
+  width: 25%;
+}
+
+.flotar-izquierda {
+  float: left;
 }
 
 .subtitulo {
@@ -987,5 +999,10 @@ input[type=submit] {
 .autobiografia-item p {
   font-size: 1.3rem;
   margin: 0;
+}
+
+.header-ghostwriter {
+  background-image: url(../img/fondo-ghostwriter.png);
+  height: 25vh;
 }
 /*# sourceMappingURL=estilos.css.map */
