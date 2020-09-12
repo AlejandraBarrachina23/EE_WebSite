@@ -737,9 +737,6 @@ h3 {
   font-size: 1.5rem;
   line-height: 1.5;
   color: #3C3C3F;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .descripcion-seccion img {
@@ -1004,5 +1001,67 @@ input[type=submit] {
 .header-ghostwriter {
   background-image: url(../img/fondo-ghostwriter.png);
   height: 25vh;
+}
+
+.header-libros {
+  background-image: url(../img/fondo-libros.png);
+  height: 25vh;
+}
+
+.listado-ediciones {
+  border-top: 1px solid #3C3C3F;
+  border-bottom: 1px solid #3C3C3F;
+  padding: 4rem;
+}
+
+.filtros-busqueda {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 2rem;
+  font-size: 1.3rem;
+  font-family: "Poppins", sans-serif;
+  color: #3C3C3F;
+  font-weight: 500;
+}
+
+.paginacion {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  color: #707070;
+  font-weight: 500;
+}
+
+.paginacion p {
+  text-align-last: right;
+  font-size: 1.2rem;
+}
+
+.paginacion-numeros {
+  margin-top: 2rem;
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.paginacion-numeros li {
+  margin: 0.5rem;
+  display: inline;
+  padding: 1rem;
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+.paginacion-numeros .mueve-pagina {
+  text-transform: uppercase;
+}
+
+.paginacion-numeros .pagina-seleccionada {
+  background-color: #107066;
+  padding: 1rem 2rem;
+  color: #fff;
+  -webkit-box-shadow: 10px 11px 16px -4px rgba(0, 0, 0, 0.15);
+          box-shadow: 10px 11px 16px -4px rgba(0, 0, 0, 0.15);
 }
 /*# sourceMappingURL=estilos.css.map */
