@@ -736,7 +736,7 @@ h3 {
 .edicion-item-descripcion {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   padding: 5rem;
   color: #3C3C3F;
 }
@@ -974,11 +974,11 @@ legend {
       flex-basis: 20%;
 }
 
-.formulario-contacto label {
+.formulario label {
   font-size: 1.3rem;
 }
 
-.formulario-contacto input, .formulario-contacto select {
+.formulario input, .formulario select {
   padding: 0.8rem;
   font-size: 1.3rem;
 }
@@ -1103,6 +1103,7 @@ input[type=submit] {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin: 2rem;
   }
   .foto-izquierda {
     display: -webkit-box;
@@ -1121,5 +1122,53 @@ input[type=submit] {
   .edicion-item-imagen h3 {
     position: static;
   }
+  .edicion-item-descripcion {
+    padding: 3rem;
+  }
+}
+
+.formulario-usuario fieldset {
+  border-top: none;
+}
+
+.registro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.registro fieldset {
+  border-top: none;
+  -webkit-box-shadow: 10px 11px 16px -4px rgba(0, 0, 0, 0.15);
+          box-shadow: 10px 11px 16px -4px rgba(0, 0, 0, 0.15);
+}
+
+.registro input {
+  width: 100%;
+}
+
+.registro .fieldset-datos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.formulario-iniciar-sesion {
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+}
+
+.formulario-registro {
+  -ms-flex-preferred-size: 45%;
+      flex-basis: 45%;
 }
 /*# sourceMappingURL=estilos.css.map */

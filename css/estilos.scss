@@ -275,7 +275,7 @@ h3{
 .edicion-item-descripcion{
 
     flex-basis:50%;
-    font-size:1.3rem;
+    font-size:1.5rem;
     padding:5rem;
     color:$colorGrisOscuro;
         
@@ -543,11 +543,12 @@ legend{
     flex-basis: 20%;
 }
 
-.formulario-contacto{
+.formulario{
 
     label{
 
         font-size:1.3rem;
+        
     }
 
     input,select{
@@ -698,14 +699,14 @@ input[type=submit]{
     .edicion-servicios{
 
         display: block;
-        
-        
+                
     }
 
     .edicion-item{
 
         display: flex;
         flex-direction: column;
+        margin:2rem;
     }
 
     .foto-izquierda{
@@ -725,6 +726,57 @@ input[type=submit]{
 
     }
 }
+.edicion-item-descripcion{
+
+    padding:3rem;
+}
 }
 
 
+.formulario-usuario fieldset{
+
+    border-top:none;
+
+}
+
+.registro{
+
+    
+    display: flex;
+    justify-content: space-between;
+    width:80%;
+    margin:0 auto;
+
+    fieldset{
+
+        border-top:none;
+        box-shadow: 10px 11px 16px -4px rgba(0,0,0,0.15);
+    }
+
+    input{
+
+        width:100%;
+    }
+
+    .fieldset-datos{
+
+        display: flex;
+        flex-direction: column;
+        
+
+    }
+}
+
+.formulario-iniciar-sesion{
+
+
+    flex-basis: 40%;   
+ 
+            
+}
+
+.formulario-registro{
+
+    flex-basis: 45%;
+   
+}
