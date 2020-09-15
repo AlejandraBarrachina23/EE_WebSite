@@ -672,7 +672,7 @@ input[type=submit]{
         display: inline;
         padding:1rem;
         font-weight: 700;
-        font-size:1.8rem;
+        font-size:1.2rem;
 
     }  
 
@@ -685,7 +685,7 @@ input[type=submit]{
     .pagina-seleccionada{
 
         background-color:$colorVerde;
-        padding:1rem 2rem;
+        padding:1rem 1.5rem;
         color:$colorPrincipal;
         box-shadow: 10px 11px 16px -4px rgba(0,0,0,0.15);
     }
@@ -913,4 +913,57 @@ input[type=submit]{
         font-size:1.6rem;
     }
     
+}
+
+.crud-libros{
+
+    width:70%;
+    margin:0 auto;
+
+    .filtros-busqueda{
+
+        padding:2rem;
+    }
+
+    .paginacion{
+        padding:1rem;
+    }
+}
+
+.menu-administrador{
+
+    display: flex;
+    justify-content: center;
+    margin:5rem;
+
+    li a{
+
+        
+        padding:2rem;
+        border:1.5px solid $colorVerde;
+        color:$colorVerde;
+        font-family: $fuenteTitulos;
+        font-weight: 600;
+        font-size:1.2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-width: 15rem;
+        box-shadow: 10px 11px 16px -4px rgba(0,0,0,0.15);
+        text-transform: none;
+        
+        i{
+
+            font-size:2.5rem;
+           
+        }
+
+        
+    }
+
+    a:hover{
+
+        background-color:$colorVerde;
+        color:$colorPrincipal;
+    }
 }

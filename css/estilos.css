@@ -1076,7 +1076,7 @@ input[type=submit] {
   display: inline;
   padding: 1rem;
   font-weight: 700;
-  font-size: 1.8rem;
+  font-size: 1.2rem;
 }
 
 .paginacion-numeros .mueve-pagina {
@@ -1085,7 +1085,7 @@ input[type=submit] {
 
 .paginacion-numeros .pagina-seleccionada {
   background-color: #107066;
-  padding: 1rem 2rem;
+  padding: 1rem 1.5rem;
   color: #fff;
   -webkit-box-shadow: 10px 11px 16px -4px rgba(0, 0, 0, 0.15);
           box-shadow: 10px 11px 16px -4px rgba(0, 0, 0, 0.15);
@@ -1278,5 +1278,60 @@ input[type=submit] {
 .tabla i {
   color: #107066;
   font-size: 1.6rem;
+}
+
+.crud-libros {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.crud-libros .filtros-busqueda {
+  padding: 2rem;
+}
+
+.crud-libros .paginacion {
+  padding: 1rem;
+}
+
+.menu-administrador {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 5rem;
+}
+
+.menu-administrador li a {
+  padding: 2rem;
+  border: 1.5px solid #107066;
+  color: #107066;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 15rem;
+  -webkit-box-shadow: 10px 11px 16px -4px rgba(0, 0, 0, 0.15);
+          box-shadow: 10px 11px 16px -4px rgba(0, 0, 0, 0.15);
+  text-transform: none;
+}
+
+.menu-administrador li a i {
+  font-size: 2.5rem;
+}
+
+.menu-administrador a:hover {
+  background-color: #107066;
+  color: #fff;
 }
 /*# sourceMappingURL=estilos.css.map */
