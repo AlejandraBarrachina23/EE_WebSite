@@ -1334,4 +1334,44 @@ input[type=submit] {
   background-color: #107066;
   color: #fff;
 }
+
+.foto-perfil {
+  max-width: 25rem;
+}
+
+.perfil {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.foto-perfil {
+  -ms-flex-preferred-size: 70%;
+      flex-basis: 70%;
+  padding: 3rem 0rem;
+  min-width: 24rem;
+}
+
+.foto-perfil p {
+  background-color: #94D6C8;
+  margin: 0;
+  padding: 1rem;
+  text-align: center;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  color: #3C3C3F;
+}
+
+.foto-perfil p i {
+  padding: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.datos-perfil {
+  -ms-flex-preferred-size: 70%;
+      flex-basis: 70%;
+}
 /*# sourceMappingURL=estilos.css.map */

@@ -967,3 +967,45 @@ input[type=submit]{
         color:$colorPrincipal;
     }
 }
+
+.foto-perfil{
+
+    max-width: 25rem;
+}
+
+.perfil{
+
+    display: flex;
+    padding:2rem;
+    flex-wrap: wrap;
+    
+}
+
+.foto-perfil{
+
+    
+    flex-basis: 70%;
+    padding:3rem 0rem;
+    min-width: 24rem;
+
+    p{
+        background-color:$colorVerdeClaro;
+        margin:0;
+        padding:1rem;
+        text-align: center;
+        font-weight: 700;
+        font-family: $fuenteTitulos;
+        color:$colorGrisOscuro;
+
+
+        i{
+            padding:0.5rem;
+            font-size:1.5rem;
+        }
+    }
+}
+
+.datos-perfil{
+
+    flex-basis: 70%;
+}

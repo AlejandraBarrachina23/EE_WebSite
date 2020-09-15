@@ -42,7 +42,7 @@
             <i class="fas fa-bars"></i>
         </div>   
         <div class="contenedor-mediano">
-            <h2 class="titulos-cabecera">Categorías</h2>     
+            <h2 class="titulos-cabecera">Mi perfil</h2>     
          </div>     
     </header>
     <section class="contenedor-mediano">
@@ -57,80 +57,59 @@
                 </ul>    
             </nav>
         </div>
-        <h2 class="subtitulo">Listado de categorías</h2>
+        <h2 class="subtitulo">Mi perfil</h2>
         <div class="descripcion-seccion">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ornare lorem neque, et celerisque ligula tempus nec. Nam molestie leo sit amet arcu lacinia, et ullamcorper libero rutrum.</p>
- 
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ornare lorem neque, et celerisque ligula tempus nec. Nam molestie leo sit amet arcu lacinia, et ullamcorper libero rutrum.</p> 
         </div>
-        <div class="crud-libros">
-        <div class="filtros-busqueda">
-            <div class="busqueda">
-                <label for="">Búsqueda</label>
-                <input type="text">
+        <form action="perfil.asp" class="formulario">
+            <fieldset>
+                <legend>Datos del usuario</legend>
+                    <div class="perfil"> 
+                    <div class="foto-perfil">
+                        <img src="img/acerca-de-mi.png" alt="">
+                        <p><i class="far fa-images"></i>Subir</p>
+                    </div>
+                    <div class="datos-perfil">
+                        <div class="fieldset-datos">
+                        <div class="form-item">
+                            <label for="nombre-perfil">Nombre</label>
+                            <input type="text" id="nombre-perfil" name="tboxNombrePerfil">
+                        </div>
+                        <div class="form-item">
+                            <label for="apellido-perfil">Apellido</label>
+                            <input type="text" id="apellido-perfil" name="tboxApellidoPerfil">
+                        </div>
+                        <div class="form-item">
+                            <label for="correo-perfil">Correo electrónico</label>
+                            <input type="text" id="mail" name="tbpxCorreoPerfil">
+                        </div>
+                        <div class="form-item">
+                            <label for="celular-perfil">Celular</label>
+                            <input type="number" id="celular-perfil" name="tboxCelularPerfil"> 
+                        </div>
+                        <div class="form-item">
+                            <label for="telefono-perfil">Teléfono</label>
+                            <input type="number" id="celular" name="tboxTelefonoPerfil"> 
+                        </div>
+                        <div class="form-item">
+                            <label for="direccion-perfil">Dirección</label>
+                            <input type="text" id="direccion-perfil" name="tboxDireccionPerfil"> 
+                        </div>
+                        <div class="form-item">
+                            <label for="contrasenia-perfil">Contraseña</label>
+                            <input type="password" id="contrasenia-perfil" name="tboxContraseniaPerfil"> 
+                        </div>
+                        <div class="form-item">
+                            <label for="repetir-contrasenia-perfil">Repetir contraseña</label>
+                            <input type="password" id="repetir-contrasenia-perfil" name="tboxRepetirContraseniaPerfil"> 
+                        </div>
+                    </div>
+                </div>
+               
             </div>
-            <div class="orden">
-                <label for="prdenar-libros">Ordernar por</label>
-                <select name="cboxOrdenarLibros" id="ordenar-libros">
-                    <option value="">Alfabéticamente: A-Z</option>
-                    <option value="">Alfabéticamente: Z-A</option>
-                    <option value="">Precio: Más bajo </option>
-                    <option value="">Precio: Más alto </option>
-                    <option value="">Fecha emisión </option>
-                </select>
-            </div>
-        </div>
-        <table class="tabla">
-            <tr>
-                <th>Código</th>
-                <th>Nombre</th>
-                <th>Acciones</th>
-              </tr>
-              <tr>
-                <td>1</td>
-                <td>Novela</td>
-                <td>
-                    <i class="far fa-edit"></i>
-                    <i class="far fa-trash-alt"></i>
-                </td>
-              </tr>
-              <tr>
-                <td>2</td>
-                <td>Cuento</td>
-                <td>
-                    <i class="far fa-edit"></i>
-                    <i class="far fa-trash-alt"></i>
-                </td>
-              </tr>
-              <tr>
-                <td>3</td>
-                <td>Biografía</td>
-                <td>
-                    <i class="far fa-edit"></i>
-                    <i class="far fa-trash-alt"></i>
-                </td>
-              </tr>
-              <tr>
-                <td>4</td>
-                <td>Ensayo</td>
-                <td>
-                    <i class="far fa-edit"></i>
-                    <i class="far fa-trash-alt"></i>
-                </td>
-              </tr>            
-        </table>
-        
-        <div class="paginacion">
-          
-            <div class="numeracion">
-                <ul class="paginacion-numeros">
-                    <li class="mueve-pagina">Ant</li>
-                    <li class="pagina-seleccionada">1</li>
-                    <li>2</li>
-                    <li class="mueve-pagina">Sig</li>
-                </ul> 
-            </div>
-        </div>
-    </div>
+            
+            </fieldset>   
+        </form>
 </section>
 
 <!--Inicio Footer-->
