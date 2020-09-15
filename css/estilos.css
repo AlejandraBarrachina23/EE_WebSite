@@ -1245,4 +1245,38 @@ input[type=submit] {
   margin: 0 auto;
   height: 100%;
 }
+
+.tabla {
+  margin: 0 auto;
+  border-collapse: collapse;
+  color: #3C3C3F;
+  -webkit-box-shadow: 10px 10px 13px 0px #e8e8e8;
+          box-shadow: 10px 10px 13px 0px #e8e8e8;
+}
+
+.tabla th {
+  background-color: #107066;
+  font-size: 1.3rem;
+  color: #fff;
+  padding: 0.5rem 2rem;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+.tabla td {
+  padding: 1rem;
+  font-size: 1.2rem;
+  text-align: center;
+  border-bottom: 1px solid #3C3C3F;
+}
+
+.tabla tr {
+  background-color: #fff;
+}
+
+.tabla i {
+  color: #107066;
+  font-size: 1.6rem;
+}
 /*# sourceMappingURL=estilos.css.map */

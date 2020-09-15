@@ -871,3 +871,46 @@ input[type=submit]{
     height: 100%;
     
 }
+
+.tabla{
+
+    margin:0 auto;
+    border-collapse: collapse;
+    color:$colorGrisOscuro;
+    box-shadow: 10px 10px 13px 0px rgba(232,232,232,1);
+  
+
+    th{
+
+        background-color:$colorVerde;
+        font-size:1.3rem;
+        color:$colorPrincipal;
+        padding:0.5rem 2rem;
+        font-weight: 500;
+        font-family: $fuenteTitulos;
+        font-weight: 600;
+                
+
+    }
+
+    td{
+
+        padding:1rem;
+        font-size:1.2rem;
+        text-align: center;
+        border-bottom:1px solid $colorGrisOscuro
+        
+    }
+
+    tr{
+
+        background-color:$colorPrincipal;
+    }
+
+    i{
+
+        color:$colorVerde;
+        font-size:1.6rem;
+    }
+    
+}
