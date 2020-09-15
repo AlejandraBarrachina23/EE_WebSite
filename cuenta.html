@@ -59,15 +59,23 @@
                             <div class="fieldset-datos">
                             <div class="form-item">
                                 <label for="usuario">Usuario</label>
-                                <input type="text" id="usuario" name="tboxUsuarioInicio">
+                                <div class="input-imagen">
+                                    <input type="text" placeholder="tu_usuario" id="usuario" name="tboxUsuarioInicio">
+                                    <i class="fas fa-lock"></i>
+                                </div>
                             </div>
                             <div class="form-item">
-                                <label for="contrasenia">Contraseña</label>
-                                <input type="password" id="contrasenia" name="tboxConstrasenia">
+                                    <label for="contrasenia">Contraseña</label>
+                                    <div class="input-imagen">
+                                        <input type="password" placeholder="contraseña
+                                        +" id="contrasenia" name="tboxConstrasenia">
+                                        <i class="far fa-eye-slash"></i>
+                                    </div>
+                            </div>
                             </div>
                             <div>
                                 <p>Olvide mi contraseña</p>
-                                <input type="submit" value="Enviar">
+                                <input type="submit" class="btn" value="Enviar">
                             </div>
                     </fieldset>
                 </form>
@@ -77,26 +85,42 @@
                                 <div class="fieldset-datos">
                                 <div class="form-item">
                                     <label for="usuario-registro">Usuario</label>
-                                    <input type="text" id="usuario-registro" name="tboxUsuarioRegistro">
+                                    <div class="input-imagen">    
+                                        <input type="text" id="usuario-registro" name="tboxUsuarioRegistro">
+                                        <i class="far fa-user"></i>
+                                    </div>
                                 </div>
                                 <div class="form-item">
-                                    <label for="correo-electronico">Correo electrónico</label>
-                                    <input type="email" id="correo-electronico" name="tboxConstrasenia">
+                                    <label for="email-registro">E-mail</label>
+                                    <div class="input-imagen">    
+                                        <input type="email" id="email-registro" name="tboxEmailRegistro">
+                                        <i class="far fa-paper-plane"></i>
+                                    </div>
                                 </div>
                                 <div class="form-item">
-                                    <label for="correo-electronico">Correo electrónico</label>
-                                    <input type="number" id="correo-electronico" name="tboxConstrasenia">
+                                    <label for="usuario-celular">Celular</label>
+                                    <div class="input-imagen">    
+                                        <input type="number" id="usuario-celular" name="tboxCelularRegistro">
+                                        <i class="fas fa-phone"></i>
+                                    </div>
                                 </div>
                                 <div class="form-item">
-                                    <label for="correo-electronico">Correo electrónico</label>
-                                    <input type="password" id="correo-electronico" name="tboxConstrasenia">
+                                    <label for="contrasenia-registro">Contraseña</label>
+                                    <div class="input-imagen">    
+                                        <input type="password" id="contrasenia-registro" name="tboxContraseniaRegistro">
+                                        <i class="far fa-eye-slash"></i>
+                                    </div>
                                 </div>
                                 <div class="form-item">
-                                    <label for="correo-electronico">Correo electrónico</label>
-                                    <input type="password" id="correo-electronico" name="tboxConstrasenia">
+                                    <label for="repetir-contrasenia-registro">Repetir Contraseña</label>
+                                    <div class="input-imagen">    
+                                        <input type="text" id="repetir-contrasenia-registro" name="tboxRepetirContrasenia">
+                                        <i class="far fa-eye-slash"></i>
+                                    </div>
                                 </div>
-                                <input type="submit" value="Enviar">
+                                <input type="submit" class="btn">
                         </fieldset>
+                        
                     </form>
             </div>
         </div>

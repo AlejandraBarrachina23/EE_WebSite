@@ -54,8 +54,7 @@ img {
     font-size:1.4rem;
     border:none;
     box-shadow: 10px 11px 16px -4px rgba(0,0,0,0.15);
-    
-    
+        
 }
 
 .btn-transparente{
@@ -746,11 +745,13 @@ input[type=submit]{
     justify-content: space-between;
     width:80%;
     margin:0 auto;
+    color:$colorGrisClaro;
 
     fieldset{
 
         border-top:none;
         box-shadow: 10px 11px 16px -4px rgba(0,0,0,0.15);
+        padding:3rem;
     }
 
     input{
@@ -765,12 +766,33 @@ input[type=submit]{
         
 
     }
+
+    h3{
+
+        padding:0rem 1rem;
+    }
+
+    .btn{
+        
+        width:95%;
+        margin-left:0.8rem;
+    }
+
 }
 
 .formulario-iniciar-sesion{
 
 
     flex-basis: 40%;   
+    
+    p{
+
+        text-align: right;
+        padding:0rem 1rem;
+        margin:0;
+    }
+
+    
  
             
 }
@@ -779,4 +801,30 @@ input[type=submit]{
 
     flex-basis: 45%;
    
+}
+
+.input-imagen{
+
+    border:1px solid $colorGrisOscuro;
+    
+    input{
+
+        border:none;
+        width:85%;
+        color:$colorGrisOscuro;
+    }
+
+    input:focus{
+
+        outline: none;
+      
+    }
+
+    i{
+
+        color:$colorGrisClaro;
+
+    }
+
+    
 }
