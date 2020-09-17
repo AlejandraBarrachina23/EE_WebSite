@@ -75,15 +75,15 @@
                         <label for="radio-imagenes">¿Cómo preferís que te contacte?</label> 
                         <div class="form-item-radio">             
                             <div class="radio-item">
-                                <input type="radio" id="radio-celular" name="rbtnTelefono" value="">
+                                <input type="radio" id="radio-celular" name="rbtnPreferenciaContacto" value="">
                                 <label for="radio-celular">Celular</label>
                             </div>
                             <div class="radio-item">
-                                <input type="radio" id="radio-mail" name="rbtnMail" value="">
+                                <input type="radio" id="radio-mail" name="rbtnPreferenciaContacto" value="">
                                 <label for="radio-mail">E-mail</label>
                             </div>
                             <div class="radio-item">
-                                <input type="radio" id="radio-indiferente" name="rbtnIndiferente" value="">
+                                <input type="radio" id="radio-indiferente" name="rbtnPreferenciaContacto" value="">
                                 <label for="radio-indiferente">Indiferente</label>
                             </div>
                         </div>
@@ -96,9 +96,9 @@
                     <div class="form-item">
                         <label for="formato-libro">Formato</label>
                         <select name="cboxFormato" id="formato-libro">
-                            <option value="">14cmx20cm</option>
-                            <option value="">15cmx23cm</option>
-                            <option value="">20cmx28cm</option>
+                            <option value="tamanio14x20">14cmx20cm</option>
+                            <option value="tamanio12x23">15cmx23cm</option>
+                            <option value="tamanio20x28">20cmx28cm</option>
                         </select>
                     </div>
                     <div class="form-item">
@@ -108,10 +108,10 @@
                     <div class="form-item">
                         <label for="formato-libro">Género</label>
                         <select name="cboxGenero" id="genero-libro">
-                            <option value="">Ensayo</option>
-                            <option value="">Novela</option>
-                            <option value="">Cuento</option>
-                            <option value="">Poesía</option>
+                            <option value="ensayo">Ensayo</option>
+                            <option value="novela">Novela</option>
+                            <option value="cuento">Cuento</option>
+                            <option value="poesia">Poesía</option>
                         </select>
                     </div>
                     <div class="form-item">
