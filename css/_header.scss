@@ -26,9 +26,12 @@ header{
 
     display: flex;
     justify-content:flex-end;
-    align-items: center;
-    height: 70rem;
+    align-items: center;   
+    align-content: center;
+    height: 65vh;
     width:93%;
+    padding:2rem;
+    
   
     
 }
@@ -54,5 +57,21 @@ h1{
     padding:1rem 0rem;
     
 
+}
+
+@media (max-width:$breakPointTabletVertical){
+
+    h1{
+
+        text-align: center;
+    }
+
+    .header-descripcion{
+
+        text-align: center;  
+        background-color:#fff;
+        opacity: 0.8;
+        
+    }
 }
 
