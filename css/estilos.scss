@@ -6,12 +6,7 @@
 @import 'contacto-landing';
 @import 'footer';
 
-/*@mixin estilos-titulos($fondo){
-
-
-}
-
-@include parallamaralafuncion();*/
+//ESTILOS GENERALES
 
 *, *:before, *:after {
 
@@ -63,6 +58,7 @@ img {
     background:none;
     color:$colorGrisOscuro;
 }
+
 
 .contenedor-grande{
 

@@ -1,32 +1,51 @@
 @import 'variables';
 
+
+@mixin estiloTexto($tamanio,$peso,$fuente){
+
+    font-size:$tamanio;
+    font-weight:$peso;
+    font-family: $fuente;
+
+}
+
 .barra-navegacion-principal{
 
     background-color:$colorVerde;
     opacity: 0.8;
-    display: flex;
-    justify-content: space-between;
     font-size: 1.1rem;
-    align-items: center;
-    flex-wrap: wrap;
-    
+           
     .logo{
         
+        flex-basis: 5%;
+        display: flex;
+        align-items: center;
+       
         img{
             
             padding:1rem;
             max-width: 8rem;
-            margin:0rem 5rem;
+            margin:0rem 1rem;
         }
     }
 
+}
+
+.contenedor-menu{
+
+    margin:0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   
 }
 
 .fa-bars{
 
     color:#fff;
     padding:1rem;
-    display: none;
+    visibility: hidden;
+    
 }
 
 
@@ -41,6 +60,7 @@
 
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 ul {
@@ -110,59 +130,62 @@ ul {
 }
 
 
-/*
+
 @media (max-width:$breakPointTabletVertical){
 
-    .menu {
+  
+    .contenedor-menu{
 
-      display: block;
-      padding:0rem;
+        display: block;
+        overflow: hidden;
+        
+    }
+
+
+    .menu{
+
+      display: flex;
+      flex-direction: column;
+      padding:0;
+      background-color:$colorVerde;
+      width:100%;
+      position:absolute;
+      right: 100%;
+    
+
+        li{
+
+            padding:1rem;            
+        }
       
-
-      li{
-          margin:2rem;
-      }
+     
       
     }
 
     .submenu{
 
-        display: block;
-        position:relative;
-        left:0;
-        padding:0rem 0rem;
-        
+        position: relative;
+        padding:0;
+        margin-bottom: 0;
 
-        li{
-            margin-bottom:0.5rem;
-            padding:0;
+
+        li:last-child{
+
+            padding-bottom:0;
         }
-     
+        
     }
 
-    body{
+    .logo{
         
-        color:blue;
-        
+        justify-content: space-between;
+    }
+
+    .fa-bars{
+
+        visibility: visible;
     }
 
     
-    .barra-navegacion-principal{
-
-        flex-direction: column;
-
-        .logo{
-        
-            img{
-                
-                padding:1rem;
-                max-width:12rem;
-                margin:0rem 5rem;
-            }
-        }
-    }
-
     
-
-
-}*/
+}
