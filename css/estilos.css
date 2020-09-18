@@ -85,6 +85,7 @@ ul li a:hover {
   display: flex;
   visibility: visible;
   opacity: 1;
+  text-align: center;
 }
 
 .submenu {
@@ -127,18 +128,30 @@ ul li a:hover {
     background-color: #107066;
     width: 100%;
     position: absolute;
-    right: 100%;
+    text-align: center;
+    visibility: hidden;
   }
   .menu li {
     padding: 1rem;
+    width: 15%;
+    margin: 0 auto;
   }
   .submenu {
     position: relative;
     padding: 0;
-    margin-bottom: 0;
+    margin: 0;
+    text-align: center;
+    display: inline-block;
+  }
+  .submenu li {
+    width: 100%;
+    padding: 1rem 2rem;
   }
   .submenu li:last-child {
     padding-bottom: 0;
+  }
+  .submenu a {
+    margin: 0 auto;
   }
   .logo {
     -webkit-box-pack: justify;
@@ -147,6 +160,16 @@ ul li a:hover {
   }
   .fa-bars {
     visibility: visible;
+  }
+  .btn-responsive {
+    font-size: 1.8rem;
+  }
+  .mostrar-barra {
+    visibility: visible;
+  }
+  .menu > li .submenu {
+    display: inline;
+    opacity: 1;
   }
 }
 

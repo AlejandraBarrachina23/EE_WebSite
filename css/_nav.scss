@@ -53,6 +53,7 @@
 .menu li{
 
     position:relative;
+    
 }
 
 
@@ -61,6 +62,8 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+
+    
 }
 
 ul {
@@ -105,7 +108,9 @@ ul {
     display:flex;
     visibility: visible;
     opacity: 1;
-
+    text-align: center;
+    
+    
 }
 
 .submenu{
@@ -115,7 +120,8 @@ ul {
     position:absolute;
     background-color:$colorVerde;
     padding:0.8rem 0rem;
-    left:-2rem;       
+    left:-2rem;      
+    
     
     li{
 
@@ -150,28 +156,49 @@ ul {
       background-color:$colorVerde;
       width:100%;
       position:absolute;
-      right: 100%;
-    
+      text-align: center;
+      visibility: hidden;   
+     
+            
 
         li{
 
-            padding:1rem;            
+            padding:1rem;
+            width:15%;   
+            margin:0 auto;      
+            
+            
         }
-      
-     
       
     }
 
     .submenu{
-
+       
         position: relative;
         padding:0;
-        margin-bottom: 0;
-
+        margin:0;
+        text-align: center;
+        display: inline-block;
+ 
+        
+        
+        li{
+     
+           width:100%;
+            padding:1rem 2rem;
+        
+           
+        }
 
         li:last-child{
 
             padding-bottom:0;
+           
+        }
+
+        a{
+
+            margin:0 auto;
         }
         
     }
@@ -186,6 +213,25 @@ ul {
         visibility: visible;
     }
 
-    
+
+
+    .btn-responsive{
+
+        font-size:1.8rem;
+    }
+
+    .mostrar-barra{
+
+       visibility: visible; 
+    }
+
+    .menu>li .submenu{
+
+        display: inline;
+        opacity: 1;
+
+        
+    }
+
     
 }
