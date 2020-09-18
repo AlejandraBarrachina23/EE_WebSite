@@ -15,9 +15,10 @@ header{
 
 .header-descripcion{
 
-    flex-basis:60rem;
+    flex-basis:35%;
     padding:4rem;
     max-width:90rem;
+    min-width: 45rem;
     font-weight: 500;    
     
 }
@@ -27,11 +28,9 @@ header{
     display: flex;
     justify-content:flex-end;
     align-items: center;   
-    align-content: center;
     height: 65vh;
-    width:93%;
     padding:2rem;
-    
+    flex-wrap: wrap;
   
     
 }
@@ -39,7 +38,7 @@ header{
 h1{
 
     font-family: $fuenteTitulos;
-    font-size:8rem;
+    font-size:7rem;
     font-weight: 700;
     line-height:1;
     color:$colorGrisOscuro;
@@ -69,9 +68,32 @@ h1{
     .header-descripcion{
 
         text-align: center;  
-        background-color:#fff;
-        opacity: 0.8;
+        margin-top:4rem;
         
     }
+
+    .contenedor{
+
+        justify-content:center;
+        align-items: flex-start; 
+
+
+        
+    }
+
+    header{
+
+          background:{
+
+        image: url(../img/error-404.jpg);
+        size: cover;
+        repeat:no-repeat;
+        position:center center;
+       
+    }
+    }
+
+
+    
 }
 
