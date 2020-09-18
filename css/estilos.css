@@ -311,6 +311,12 @@ h1 {
   margin: 0;
 }
 
+@media (max-width: 768px) {
+  .imagen-fondo {
+    background-image: none;
+  }
+}
+
 .acerca-de-mi {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -371,6 +377,15 @@ h1 {
   width: 3.5rem;
   height: 3.5rem;
   border-radius: 100%;
+}
+
+@media (max-width: 768px) {
+  .acerca-de-mi-descripcion {
+    margin: 1rem;
+  }
+  h3, h4 {
+    text-align: center;
+  }
 }
 
 .fondo-general {

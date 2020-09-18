@@ -69,3 +69,17 @@
 
     }
 }
+
+@media (max-width:$breakPointTabletVertical){
+
+    .acerca-de-mi-descripcion{
+        margin:1rem;
+
+    }
+ 
+    h3,h4{
+      
+        text-align: center;
+    }
+
+}
