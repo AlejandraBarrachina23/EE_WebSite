@@ -4,7 +4,7 @@
 .barra-navegacion-principal {
   background-color: #107066;
   opacity: 0.8;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 
 .barra-navegacion-principal .logo {
@@ -178,20 +178,11 @@ ul li a:hover {
 /*BREAKPOINTS*/
 header {
   width: 100%;
-  height: 80rem;
+  height: 65rem;
   background-image: url(../img/fondo-p.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-}
-
-.header-descripcion {
-  -ms-flex-preferred-size: 35%;
-      flex-basis: 35%;
-  padding: 4rem;
-  max-width: 90rem;
-  min-width: 45rem;
-  font-weight: 500;
 }
 
 .contenedor {
@@ -204,10 +195,19 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 65vh;
+  height: 75rem;
   padding: 2rem;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  width: 90%;
+}
+
+.header-descripcion {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+  padding: 1rem;
+  max-width: 50rem;
+  font-weight: 500;
 }
 
 h1 {
@@ -236,18 +236,22 @@ h1 {
     margin-top: 4rem;
   }
   .contenedor {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    display: block;
+    padding: 1rem;
+    margin: 0;
   }
   header {
     background-image: url(../img/error-404.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+  }
+  h1 {
+    font-size: 5.5rem;
+  }
+  .descripcion-principal {
+    font-size: 1.3rem;
+    line-height: 1.7;
   }
 }
 
@@ -383,13 +387,12 @@ h1 {
   .acerca-de-mi-descripcion {
     margin: 1rem;
   }
-  h3, h4 {
+  .acerca-de-mi-descripcion h3, .acerca-de-mi-descripcion h4 {
     text-align: center;
   }
 }
 
 .fondo-general {
-  background-image: url(../img/fondo-landing-footer.jpg);
   background-size: cover;
 }
 
@@ -400,6 +403,8 @@ h1 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .contacto-simple p {
@@ -431,10 +436,13 @@ h1 {
   padding: 4rem;
   -ms-flex-preferred-size: 70%;
       flex-basis: 70%;
-  width: 35%;
+  width: 30%;
+  min-width: 30rem;
+  max-width: 50rem;
   position: absolute;
-  left: 65%;
+  left: 50%;
   top: 5%;
+  height: 40rem;
 }
 
 .contacto-simple-formulario input {
@@ -444,6 +452,11 @@ h1 {
 
 .contacto-simple-formulario label {
   font-size: 1.3rem;
+}
+
+.contacto-simple-formulario .btn {
+  display: block;
+  width: 100%;
 }
 
 address i {
@@ -458,6 +471,28 @@ address p {
   font-weight: 500;
   font-style: normal;
   margin: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .contacto-simple {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contacto-simple-formulario {
+    position: relative;
+    width: 50%;
+    min-width: 30rem;
+    max-width: 40rem;
+    left: 0;
+    top: 0;
+    height: 40rem;
+  }
+  .contacto-simple-informacion {
+    line-height: 1.8;
+    font-size: 1.3rem;
+  }
 }
 
 .pie-de-pagina {
@@ -606,7 +641,7 @@ img {
 
 .contenedor-grande {
   width: 100%;
-  background-color: #107066;
+  background-color: #94D6C8;
   opacity: 0.9;
   padding: 1rem;
 }

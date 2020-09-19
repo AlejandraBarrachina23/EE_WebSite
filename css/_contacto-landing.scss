@@ -1,6 +1,6 @@
 .fondo-general{
 
-    background-image: url(../img/fondo-landing-footer.jpg);
+    //background-image: url(../img/fondo-landing-footer.jpg);
     background-size:cover;
     
 }
@@ -9,6 +9,8 @@
 
    display: flex; 
    justify-content:space-between;
+   flex-wrap: wrap;
+
 
     p{
 
@@ -38,21 +40,29 @@
     background-color:$colorPrincipal;
     padding:4rem;
     flex-basis:70%;
-    width:35%;
+    width:30%;
+    min-width: 30rem;
+    max-width: 50rem;
     position:absolute;
-    left:65%;
+    left:50%;
     top:5%;
+    height: 40rem;
     
     input{
 
         padding:0.5rem;
         margin:0.1rem 0rem;
-                
     }
 
     label{
 
         font-size:1.3rem;
+    }
+
+    .btn{
+
+        display: block;
+        width:100%;
     }
 }
 
@@ -75,4 +85,36 @@ address{
         margin:0.5rem;
         
     }
+}
+
+@media (max-width:$breakPointTabletVertical){
+
+    
+    .contacto-simple {
+
+        flex-direction: column;
+     
+ 
+ 
+ }
+
+    .contacto-simple-formulario{
+
+        position: relative;
+        width:50%;
+        min-width: 30rem;
+        max-width: 40rem;
+        left:0;
+        top:0;
+        height: 40rem;
+    }
+
+    
+    .contacto-simple-informacion{
+
+        
+        line-height:1.8;
+        font-size:1.3rem;  
+    }
+ 
 }
