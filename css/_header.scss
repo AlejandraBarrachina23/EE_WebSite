@@ -7,11 +7,13 @@ header{
         image: url(../img/fondo-p.jpg);
         size: cover;
         repeat:no-repeat;
-        position:center center;
+        position:center;
        
     }
   
 }
+
+
 
 .contenedor{
 
@@ -30,11 +32,23 @@ header{
     flex-basis:30%;
     padding:1rem;
     max-width:50rem;
-   
     font-weight: 500;    
+
+    h2{
+
+        text-transform: none;
+        font-size: 2.5rem;
+        margin-top:2rem;
+
+    }
+
+
+    .ediciones{
+
+        font-size:4rem;
+    }
     
 }
-
 
 
 h1{
@@ -45,6 +59,7 @@ h1{
     line-height:1;
     color:$colorGrisOscuro;
     margin:0;
+    text-shadow: 1px 2px rgba(0,0,0,0.1);
     
 }
 
@@ -56,7 +71,8 @@ h1{
     font-weight: 500;
     color:$colorGrisOscuro;
     padding:1rem 0rem;
-    
+    line-height: 1.7;
+    margin:0;
 
 }
 
@@ -71,12 +87,16 @@ h1{
 
         text-align: center;  
         margin-top:4rem;
+        flex-basis: 70%;
+        
         
     }
 
     .contenedor{
 
-        display: block;
+        justify-content: center;
+        align-items: flex-start;
+        width:100%;
         padding:1rem;
         margin:0;
 
@@ -86,7 +106,7 @@ h1{
 
           background:{
 
-            image: url(../img/error-404.jpg);
+            image: url(../img/fondo-lp.jpg);
             size: cover;
             repeat:no-repeat;
             position:center center;
@@ -103,7 +123,10 @@ h1{
 
         font-size:1.3rem;
         line-height: 1.7;
+        
+        padding:2.5rem 2rem;
     }
     
 }
+
 

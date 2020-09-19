@@ -182,7 +182,7 @@ header {
   background-image: url(../img/fondo-p.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center;
 }
 
 .contenedor {
@@ -210,6 +210,16 @@ header {
   font-weight: 500;
 }
 
+.header-descripcion h2 {
+  text-transform: none;
+  font-size: 2.5rem;
+  margin-top: 2rem;
+}
+
+.header-descripcion .ediciones {
+  font-size: 4rem;
+}
+
 h1 {
   font-family: "Poppins", sans-serif;
   font-size: 7rem;
@@ -217,6 +227,7 @@ h1 {
   line-height: 1;
   color: #3C3C3F;
   margin: 0;
+  text-shadow: 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 .descripcion-principal {
@@ -225,6 +236,8 @@ h1 {
   font-weight: 500;
   color: #3C3C3F;
   padding: 1rem 0rem;
+  line-height: 1.7;
+  margin: 0;
 }
 
 @media (max-width: 768px) {
@@ -234,14 +247,22 @@ h1 {
   .header-descripcion {
     text-align: center;
     margin-top: 4rem;
+    -ms-flex-preferred-size: 70%;
+        flex-basis: 70%;
   }
   .contenedor {
-    display: block;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    width: 100%;
     padding: 1rem;
     margin: 0;
   }
   header {
-    background-image: url(../img/error-404.jpg);
+    background-image: url(../img/fondo-lp.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -252,6 +273,7 @@ h1 {
   .descripcion-principal {
     font-size: 1.3rem;
     line-height: 1.7;
+    padding: 2.5rem 2rem;
   }
 }
 
@@ -663,10 +685,17 @@ h2 {
   color: #312F2F;
   text-transform: uppercase;
   display: inline-block;
-  line-height: 0;
-  border-bottom: 20px solid #94D6C8;
   text-shadow: 1px 2px rgba(0, 0, 0, 0.1);
   font-size: 2rem;
+  margin: 0;
+  line-height: 0.5;
+}
+
+h2::after {
+  content: '';
+  display: block;
+  height: 1rem;
+  background-color: #94D6C8;
 }
 
 .bajada-titulo {
