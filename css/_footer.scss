@@ -6,8 +6,7 @@
     justify-content: space-around;
     align-items: center;
     padding:2rem;
-    height: 20rem;
-        
+            
 }
 
 .logo img{
@@ -104,6 +103,47 @@ small{
     a{
         color:$colorPrincipal;
         text-decoration:none;
+    }
+}
+
+
+@media (max-width:$breakPointTabletVertical){
+
+    .pie-de-pagina{
+        
+        display: block;
+    }
+    .logo img{
+
+       display: none;
+    }
+
+    footer .navegacion{
+
+        h3{
+            text-align: center;
+            font-size:1.5rem;
+        }
+       
+        ul{
+
+            li{
+               
+                display: block;
+                width:100%;
+                padding:0.5rem;
+                text-align: center;
+                
+                
+                                
+            }
+        }
+
+    }
+
+    .rs-footer h3{
+        font-size:1.5rem;
+        padding:1rem;
     }
 }
 

@@ -208,22 +208,24 @@ header {
   padding: 1rem;
   max-width: 50rem;
   font-weight: 500;
+  font-size: 1.5rem;
 }
 
 .header-descripcion h2 {
   text-transform: none;
   font-size: 2.5rem;
   margin-top: 2rem;
+  font-weight: 600;
 }
 
 .header-descripcion .ediciones {
-  font-size: 4rem;
+  font-size: 3.5rem;
 }
 
 h1 {
   font-family: "Poppins", sans-serif;
   font-size: 7rem;
-  font-weight: 700;
+  font-weight: 800;
   line-height: 1;
   color: #3C3C3F;
   margin: 0;
@@ -273,7 +275,7 @@ h1 {
   .descripcion-principal {
     font-size: 1.3rem;
     line-height: 1.7;
-    padding: 2.5rem 2rem;
+    padding: 2.5rem 0.2rem;
   }
 }
 
@@ -528,7 +530,6 @@ address p {
       -ms-flex-align: center;
           align-items: center;
   padding: 2rem;
-  height: 20rem;
 }
 
 .logo img {
@@ -615,6 +616,29 @@ footer .navegacion ul li a {
 small a {
   color: #fff;
   text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .pie-de-pagina {
+    display: block;
+  }
+  .logo img {
+    display: none;
+  }
+  footer .navegacion h3 {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  footer .navegacion ul li {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    text-align: center;
+  }
+  .rs-footer h3 {
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
 }
 
 *, *:before, *:after {

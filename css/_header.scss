@@ -32,20 +32,22 @@ header{
     flex-basis:30%;
     padding:1rem;
     max-width:50rem;
-    font-weight: 500;    
+    font-weight: 500;  
+    font-size:1.5rem;
 
     h2{
 
         text-transform: none;
         font-size: 2.5rem;
         margin-top:2rem;
+        font-weight: 600;
 
     }
 
 
     .ediciones{
 
-        font-size:4rem;
+        font-size:3.5rem;
     }
     
 }
@@ -55,7 +57,7 @@ h1{
 
     font-family: $fuenteTitulos;
     font-size:7rem;
-    font-weight: 700;
+    font-weight: 800;
     line-height:1;
     color:$colorGrisOscuro;
     margin:0;
@@ -124,7 +126,7 @@ h1{
         font-size:1.3rem;
         line-height: 1.7;
         
-        padding:2.5rem 2rem;
+        padding:2.5rem 0.2rem;
     }
     
 }
