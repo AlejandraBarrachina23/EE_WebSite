@@ -6,6 +6,8 @@
 @import 'contacto-landing';
 @import 'footer';
 
+
+
 //ESTILOS GENERALES
 
 *, *:before, *:after {
@@ -29,6 +31,8 @@ body {
 
 }
 
+
+
 img {
    
     max-width: 100%;
@@ -47,9 +51,7 @@ img {
     text-transform: uppercase;
     font-weight: 500;
     font-size:1.4rem;
-   
     box-shadow: 10px 10px 8px -10px rgba(0,0,0,0.75);
-    
     border:none;
         
 }
@@ -311,34 +313,71 @@ h3{
     }
 }
 
-
+//GHOSTWRITER
 
 .descripcion-seccion{
 
     font-size:1.5rem;
     line-height:1.5;
     color:$colorGrisOscuro;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+    
+    .descripcion-imagenes{
+        
+       flex-basis: 50%;
+       padding:1rem;
+            
+    }
+
+    .descripcion-parrafos{
+
+        flex-basis: 50%;
+        line-height: 1.7;
+        min-width: 35rem;
+        
+   
+    }
+        
+        
+    
 
     img{
 
-        width:50%;
+        width:100%;
+        height: 30rem;
+        object-fit: cover;
+        margin:auto;
+     
+    }
+  
+}
+
+@media (max-width:$breakPointTabletVertical){
+
+    .descripcion-seccion{
+
+        flex-direction: column;
+
+        
+    }
+
+    .descripcion-parrafos{
+
+
         padding:1rem;
-         flex-basis:50%;
+        align-self: flex-start;
+        order:2;
     }
 
-    .imagen-vertical{
-
-        width:25%;
-    }
     
+    
+
+
 }
 
-
-
-.flotar-izquierda{
-
-    float:left;
-}
 
 .subtitulo{
 
@@ -627,7 +666,14 @@ input[type=submit]{
 
     background-image: url(../img/fondo-ghostwriter.png);
     height: 25vh;
+
+
     
+}
+
+.descripcion-parrafos{
+
+    font-size:1.3rem;
 }
 
 .header-libros{
