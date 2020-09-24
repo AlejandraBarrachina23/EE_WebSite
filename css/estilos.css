@@ -758,6 +758,68 @@ small a {
   top: 86%;
 }
 
+.header-talleres {
+  background-image: url(../img/fondo-talleres.jpg);
+  height: 20vh;
+}
+
+.listado-autobiografias {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.libro-autobiografia-tapa {
+  max-width: 15rem;
+  padding: 1rem;
+}
+
+.autobiografia-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.autobiografia-item h3 {
+  background-color: #94D6C8;
+  padding: 1rem;
+}
+
+.autobiografia-item p {
+  font-size: 1.3rem;
+  margin: 0;
+}
+
+.header-ghostwriter {
+  background-image: url(../img/fondo-ghostwriter.png);
+  height: 25vh;
+}
+
+.descripcion-parrafos {
+  font-size: 1.3rem;
+}
+
+@media (max-width: 768px) {
+  .autobiografia-item {
+    padding: 0rem;
+    margin: 0rem;
+    margin-bottom: 2rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 85%;
+  }
+  .autobiografia-item h3 {
+    width: 100%;
+    margin: auto;
+    margin: 1rem 0rem;
+  }
+}
+
 *, *:before, *:after {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
@@ -1010,6 +1072,16 @@ h3 {
   margin: auto;
 }
 
+.descripcion-flotada {
+  display: block;
+  margin-bottom: 5rem;
+}
+
+.descripcion-flotada .descripcion-imagenes {
+  width: 50%;
+  float: left;
+}
+
 @media (max-width: 768px) {
   .descripcion-seccion {
     -webkit-box-orient: vertical;
@@ -1027,6 +1099,15 @@ h3 {
   }
   .header-ghostwriter .contenedor-mediano, .header-edicion .contenedor-mediano {
     text-align: center;
+  }
+  .descripcion-flotada {
+    display: block;
+  }
+  .descripcion-flotada .descripcion-imagenes {
+    float: none;
+  }
+  .descripcion-flotada .descripcion-imagenes {
+    width: 100%;
   }
 }
 
@@ -1238,49 +1319,6 @@ input[type=submit] {
   display: block;
   width: 20%;
   margin-top: 3rem;
-}
-
-.header-talleres {
-  background-image: url(../img/fondo-talleres.jpg);
-  height: 20vh;
-}
-
-.listado-autobiografias {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-.libro-autobiografia-tapa {
-  max-width: 15rem;
-  padding: 1rem;
-}
-
-.autobiografia-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.autobiografia-item h3 {
-  background-color: #94D6C8;
-  padding: 1rem;
-}
-
-.autobiografia-item p {
-  font-size: 1.3rem;
-  margin: 0;
-}
-
-.header-ghostwriter {
-  background-image: url(../img/fondo-ghostwriter.png);
-  height: 25vh;
-}
-
-.descripcion-parrafos {
-  font-size: 1.3rem;
 }
 
 .header-libros {

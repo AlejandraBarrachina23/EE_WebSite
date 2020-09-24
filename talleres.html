@@ -14,10 +14,11 @@
     <!--Inicio header-->
     <header class="header-talleres">
         <div class="barra-navegacion-principal">
-            <div class="logo">
-                <img src="img/logo-sin.svg" alt="">
-            </div>
-            <nav>
+            <nav class="contenedor-menu">
+                <div class="logo">
+                    <img src="img/logo-sin.svg" alt="">
+                    <i class="fas fa-bars" id="btn-responsive"></i>    
+                </div>        
                 <ul class="menu">
                     <li><a href="#">Servicios</a>
                             <ul class="submenu">
@@ -30,17 +31,10 @@
                     <li><a href="libros.html">Libros</a></li>
                     <li><a href="faq.html">FAQ</a></li>
                     <li><a href="contacto.html">Contacto</a></li>
-                    <li><a href="#">Cuenta</a>
-                        <ul class="submenu">
-                            <li><a href="#">Inicia</a></li>
-                            <li><a href="#">Registrarse</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                    <li><a href="cuenta.html">Cuenta</a></li>
                  </ul>
-            </nav>
-            <i class="fas fa-bars"></i>
-        </div>   
+                </nav>            
+        </div>  
         <div class="contenedor-mediano">
             <h2 class="titulos-cabecera">Talleres</h2>
          </div>      
@@ -53,8 +47,10 @@
             <p>Ediciones Elemento ofrece este servicio de manera independiente de la edición del libro, llena nuestra formulario <a href="contacto.html"><strong><span class="resaltar-verde">aquí</span></strong></a>para que nos pongamos en contacto.</p>
         </div>
         <h2 class="subtitulo">Biografía, autobiografía y memorias</h2>
-        <div class="descripcion-seccion">
-            <img src="img/talleres.jpg" alt="">
+        <div class="descripcion-seccion descripcion-flotada">
+            <div class="descripcion-imagenes">
+                <img src="img/talleres.jpg" class="flotar-izquierda" alt="">
+            </div>
             <div class="descripcion-parrafos">
                 <p>A mitad de camino entre la literatura y la historia, la biografía es el relato de una vida, contada por una tercera persona. 
                 La autobiografía, aunque parecida, es el relato de una vida, contado por el propio protagonista, es decir en primera persona. El estilo es siempre libre, de no ficción y puede darse en forma cronológica o no, ser epistolar o dividirse en capítulos convencionales.</p>
@@ -74,17 +70,7 @@
                     <p>Año: 2002</p>
                 </div>
             </div>
-            <div class="autobiografia-item">
-                <div class="libro-autobiografia-tapa">
-                    <img src="img/autobiografia-tapa2.png" alt="">
-                </div>
-                <div class="libro-autobiografia-descripcion">
-                    <h3>Lazarillo de Tormes</h3>
-                    <p>Autor: Anónimo</p>
-                    <p>Género: Autobiografía</p>
-                    <p>Año: 1554</p>
-                </div>
-            </div>
+
             <div class="autobiografia-item">
                 <div class="libro-autobiografia-tapa">
                     <img src="img/autobiografia-tapa3.jpg" alt="">
@@ -94,6 +80,17 @@
                     <p>Autor: Antoine de Saint</p>
                     <p>Género: Autobiografía</p>
                     <p>Año: 1993</p>
+                </div>
+            </div>
+            <div class="autobiografia-item">
+                <div class="libro-autobiografia-tapa">
+                    <img src="img/autobiografia-tapa2.png" alt="">
+                </div>
+                <div class="libro-autobiografia-descripcion">
+                    <h3>Lazarillo de Tormes</h3>
+                    <p>Autor: Anónimo</p>
+                    <p>Género: Autobiografía</p>
+                    <p>Año: 1554</p>
                 </div>
             </div>
         </div>
