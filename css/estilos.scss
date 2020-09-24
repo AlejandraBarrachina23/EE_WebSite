@@ -47,8 +47,10 @@ img {
     text-transform: uppercase;
     font-weight: 500;
     font-size:1.4rem;
+   
+    box-shadow: 10px 10px 8px -10px rgba(0,0,0,0.75);
+    
     border:none;
-    box-shadow: 10px 11px 16px -4px rgba(0,0,0,0.15);
         
 }
 
@@ -109,7 +111,9 @@ h2::after{
 
 .bajada-titulo{
 
-    font-size:1.5rem;
+    font-size:1.3rem;
+    line-height: 1.4;
+    font-family: $fuenteTitulos;
     
     
 }
