@@ -14,10 +14,11 @@
     <!--Inicio header-->
     <header class="header-contacto">
         <div class="barra-navegacion-principal">
-            <div class="logo">
-                <img src="img/logo-sin.svg" alt="">
-            </div>
-            <nav>
+            <nav class="contenedor-menu">
+                <div class="logo">
+                    <img src="img/logo-sin.svg" alt="">
+                    <i class="fas fa-bars" id="btn-responsive"></i>    
+                </div>        
                 <ul class="menu">
                     <li><a href="#">Servicios</a>
                             <ul class="submenu">
@@ -30,17 +31,10 @@
                     <li><a href="libros.html">Libros</a></li>
                     <li><a href="faq.html">FAQ</a></li>
                     <li><a href="contacto.html">Contacto</a></li>
-                    <li><a href="#">Cuenta</a>
-                        <ul class="submenu">
-                            <li><a href="#">Inicia</a></li>
-                            <li><a href="#">Registrarse</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                    <li><a href="cuenta.html">Cuenta</a></li>
                  </ul>
-            </nav>
-            <i class="fas fa-bars"></i>
-        </div> 
+                </nav>            
+        </div>  
         <div class="contenedor-mediano">
             <h2 class="titulos-cabecera">Contacto</h2>     
          </div>  
@@ -80,7 +74,7 @@
                             </div>
                             <div class="radio-item">
                                 <input type="radio" id="radio-mail" name="rbtnPreferenciaContacto" value="">
-                                <label for="radio-mail">E-mail</label>
+                                <label for="radio-mail">Mail</label>
                             </div>
                             <div class="radio-item">
                                 <input type="radio" id="radio-indiferente" name="rbtnPreferenciaContacto" value="">
