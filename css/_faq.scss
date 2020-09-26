@@ -32,7 +32,7 @@
 .pregunta{
   
     background-color:$colorVerdeClaro;
-    border:1px solid $colorVerde;
+    border-bottom:1px solid $colorVerde;
     font-family: $fuenteTitulos;
     font-size:1.3rem;
     font-weight: 600;
@@ -43,7 +43,8 @@
     cursor:pointer;
     display: block;
     line-height: 1.5rem;
-     
+
+    
 }
 
 .pregunta:after{
@@ -53,7 +54,8 @@
     display: block;
     position:absolute;
     top:1.5rem;
-    right:1rem;     
+    right:1rem;    
+    
 }
 
 .respuesta{
@@ -102,11 +104,13 @@
 .faq{
 
     align-items: center;
+    
 }
 
 .faq-derecha{
 
     display: none;
+   
 }
 
 }
