@@ -1,9 +1,7 @@
 
 const botonHamburguesa = document.querySelector("#btn-responsive");
-
 botonHamburguesa.addEventListener('click',mostrarDiv);
-
-
+desplegarRespuesta();
 
 function mostrarDiv(){
    
@@ -11,7 +9,14 @@ function mostrarDiv(){
     menu.classList.toggle('mostrar-barra');
 }
 
-function mostarSubmenu(){
-
-
+function desplegarRespuesta(){
+   
+    const preguntas = document.querySelectorAll(".pregunta");
+    preguntas.forEach(unaPregunta => {
+        unaPregunta.addEventListener('click',  () => {
+            unaPregunta.classList.toggle('desplegar');
+        });
+    });
+    
+    
 }
