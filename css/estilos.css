@@ -1075,6 +1075,101 @@ input[type=submit] {
   color: #707070;
 }
 
+.header-nosotros {
+  height: 25vh;
+  background-image: url(../img/fondo-nosotros.png);
+}
+
+.carta-presentacion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-shadow: 10px 11px 16px -4px rgba(0, 0, 0, 0.15);
+          box-shadow: 10px 11px 16px -4px rgba(0, 0, 0, 0.15);
+  position: relative;
+}
+
+.datos-autor-imagen {
+  background-image: url(../img/nosotros.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 30rem;
+}
+
+.datos-autor-contacto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.carta {
+  font-size: 1.3rem;
+  font-style: italic;
+  line-height: 1.8;
+  -ms-flex-preferred-size: calc(48% - 2rem);
+      flex-basis: calc(48% - 2rem);
+  background-color: #94D6C8;
+  padding: 10rem;
+}
+
+.carta img {
+  max-width: 5rem;
+}
+
+.datos-autor-descripcion {
+  background-color: #107066;
+  color: #000;
+  width: 35%;
+  min-width: 15rem;
+  font-size: 1.3rem;
+  position: absolute;
+  top: 6rem;
+  right: -2rem;
+  padding: 2rem;
+  opacity: 0.9;
+}
+
+.datos-autor-descripcion h3 {
+  font-style: normal;
+  color: #000;
+  text-align: center;
+  margin: 0;
+  padding-top: 1rem;
+}
+
+.datos-autor-descripcion h4 {
+  margin: 0;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.datos-autor-contacto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.datos-autor-contacto .redes-sociales h3, .datos-autor-contacto .datos-autor-c h3 {
+  font-size: 1.2rem;
+  padding: 1rem;
+}
+
+.datos-autor-contacto .redes-sociales i, .datos-autor-contacto .datos-autor-c i {
+  margin: 0;
+  padding: 0.6rem;
+  font-size: 1.3rem;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
 *, *:before, *:after {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
@@ -1097,6 +1192,12 @@ body {
 img {
   max-width: 100%;
   display: block;
+}
+
+.titulos-cabecera {
+  font-size: 3.5rem;
+  margin-top: 5%;
+  text-transform: none;
 }
 
 .btn {
@@ -1368,70 +1469,6 @@ h3 {
 
 .subtitulo {
   text-transform: none;
-}
-
-.header-nosotros {
-  height: 25vh;
-  background-image: url(../img/fondo-nosotros.png);
-}
-
-.carta-presentacion {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-shadow: 10px 11px 16px -4px rgba(0, 0, 0, 0.15);
-          box-shadow: 10px 11px 16px -4px rgba(0, 0, 0, 0.15);
-  padding: 5rem;
-}
-
-.datos-autor-contacto {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  margin-top: 5rem;
-}
-
-.datos-autor {
-  -ms-flex-preferred-size: calc(50% - 2rem);
-      flex-basis: calc(50% - 2rem);
-  padding: 2rem;
-}
-
-.carta {
-  font-size: 1.3rem;
-  font-style: italic;
-  line-height: 1.8;
-  -ms-flex-preferred-size: calc(48% - 2rem);
-      flex-basis: calc(48% - 2rem);
-}
-
-.carta img {
-  max-width: 5rem;
-}
-
-.titulos-cabecera {
-  font-size: 3.5rem;
-  margin-top: 5%;
-  text-transform: none;
-}
-
-.datos-autor-descripcion h3 {
-  color: #3C3C3F;
-  font-size: 1.8rem;
-  text-align: center;
-  margin: 0;
-  margin-top: 1rem;
-}
-
-.datos-autor-descripcion h4 {
-  font-size: 1.3rem;
-  margin: 0;
-  text-align: center;
-  color: #3C3C3F;
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
 }
 
 .header-libros {
