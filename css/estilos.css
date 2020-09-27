@@ -1091,11 +1091,12 @@ input[type=submit] {
   -webkit-box-shadow: 10px 11px 16px -4px rgba(0, 0, 0, 0.15);
           box-shadow: 10px 11px 16px -4px rgba(0, 0, 0, 0.15);
   position: relative;
+  margin-top: 5rem;
 }
 
 .datos-autor-imagen {
   background-image: url(../img/nosotros.jpg);
-  background-position: center;
+  background-position: center center;
   background-size: cover;
   height: 30rem;
 }
@@ -1110,7 +1111,6 @@ input[type=submit] {
 
 .carta {
   font-size: 1.3rem;
-  font-style: italic;
   line-height: 1.8;
   -ms-flex-preferred-size: calc(48% - 2rem);
       flex-basis: calc(48% - 2rem);
@@ -1168,6 +1168,40 @@ input[type=submit] {
   font-size: 1.3rem;
   width: 2.5rem;
   height: 2.5rem;
+  color: #252525;
+}
+
+@media (max-width: 768px) {
+  .datos-autor-descripcion {
+    position: static;
+    width: 100%;
+    padding: 3rem;
+  }
+  .carta {
+    padding: 2.5rem 3rem;
+  }
+  .datos-autor-imagen {
+    height: 20rem;
+  }
+  .datos-autor-descripcion {
+    padding: 1rem;
+  }
+  .datos-autor-contacto {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .datos-autor-contacto .redes-sociales {
+    -ms-flex-preferred-size: 40%;
+        flex-basis: 40%;
+  }
+  .datos-autor-contacto .datos-autor-c {
+    -ms-flex-preferred-size: 40%;
+        flex-basis: 40%;
+  }
 }
 
 *, *:before, *:after {

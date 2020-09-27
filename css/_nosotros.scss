@@ -11,13 +11,14 @@
     flex-direction: column;
     box-shadow: 10px 11px 16px -4px rgba(0,0,0,0.15);
     position: relative;
+    margin-top:5rem;
        
 }
 
 .datos-autor-imagen{
 
     background-image: url(../img/nosotros.jpg);
-    background-position: center;
+    background-position: center center;
     background-size: cover;
     height: 30rem;
 
@@ -33,7 +34,6 @@
 .carta{
 
     font-size:1.3rem;
-    font-style: italic;
     line-height: 1.8;
     flex-basis: calc(48% - 2rem);
     background-color:$colorVerdeClaro;
@@ -106,6 +106,53 @@
             font-size:1.3rem;
             width:2.5rem;
             height: 2.5rem;
+            color:rgb(37, 37, 37);
         }
     }
+}
+
+@media (max-width:$breakPointTabletVertical){
+
+    .datos-autor-descripcion{
+
+        position:static;
+        width:100%;
+        padding:3rem;
+           
+    }
+
+    .carta{
+
+        padding:2.5rem 3rem;
+    }
+
+    
+.datos-autor-imagen{
+
+    height: 20rem;
+}
+
+.datos-autor-descripcion{
+
+    padding:1rem;
+}
+.datos-autor-contacto{
+
+    flex-direction: row;
+    justify-content: space-around;
+
+    .redes-sociales{
+
+        flex-basis: 40%;
+    }
+    
+    .datos-autor-c{
+
+        flex-basis: 40%;
+    }
+
+}
+
+
+    
 }
